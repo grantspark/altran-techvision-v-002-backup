@@ -1,0 +1,164 @@
+:host {
+  h1 {
+    color: #5f4f9b;
+  }
+
+  .wrapper-mob {
+    .content {
+      margin-left: 30px;
+      margin-right: 30px;
+
+      .title {
+        background: #5f4f9b;
+
+        .left {
+          font-size: 45px;
+          font-weight: bold;
+          line-height: 50px;
+          padding: 30px;
+          color: #fff;
+        }
+
+        .right {
+          img {
+            height: 300px;
+          }
+        }
+      }
+    }
+
+    .description {
+      background: #fff;
+      position: relative;
+
+      padding: 30px;
+
+      .left {
+        color: #5f4f9b;
+
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+    //   .right {
+    //     position: absolute;
+    //     right: 70px;
+    //     top: 30px;
+
+    //     img {
+    //       height: 180px;
+    //     }
+    //   }
+    }
+  }
+
+  .wrapper {
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      margin-top: -200px;
+
+      .title {
+        position: relative;
+
+        background: #5f4f9b;
+
+        width: 980px;
+        padding: 30px;
+
+        .left {
+          display: flex;
+          align-items: center;
+
+          width: 500px;
+          height: 240px;
+
+          font-size: 50px;
+          font-weight: bold;
+          line-height: 60px;
+
+          color: #fff;
+        }
+
+        .right {
+          position: absolute;
+          right: 70px;
+          top: 0;
+
+          img {
+            height: 300px;
+          }
+        }
+      }
+    }
+
+    .description {
+      position: relative;
+
+      background: #fff;
+
+      width: 980px;
+      padding: 30px;
+
+      .left {
+        width: 500px;
+
+        font-size: 16px;
+        font-weight: bold;
+
+        color: #5f4f9b;
+      }
+
+      .right {
+        position: absolute;
+        right: 70px;
+        top: 30px;
+
+        img {
+          height: 180px;
+        }
+      }
+    }
+  }
+
+  .survey {
+    background: #f2f2f2;
+    padding: 30px;
+
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 32px;
+
+    margin-bottom: 20px;
+
+    span {
+      color: #5f4f9b;
+    }
+  }
+
+  ul {
+    margin: 0.75em 40px;
+    padding: 0 1em;
+    list-style: none;
+  }
+
+  li {
+    margin-bottom: 15px;
+  }
+
+  li:before {
+    content: "";
+    border-color: transparent #5f4f9b;
+    border-style: solid;
+    border-width: 0.4em 0 0.4em 0.5em;
+    display: block;
+    height: 0;
+    width: 0;
+    left: -1em;
+    top: 20px;
+    position: relative;
+  }
+}

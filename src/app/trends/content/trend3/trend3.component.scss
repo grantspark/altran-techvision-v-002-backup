@@ -1,0 +1,134 @@
+:host {
+  h1 {
+    color: #eb5f1e;
+  }
+
+  .wrapper-mob {
+    .content {
+      //   margin-top: 0px;
+      margin-left: 30px;
+      margin-right: 30px;
+
+      .title {
+        background: #eb5f1e;
+
+        .left {
+          font-size: 45px;
+          font-weight: bold;
+          line-height: 50px;
+          padding: 30px;
+          color: #fff;
+        }
+
+        .right {
+          // padding: 30px;
+          img {
+            height: 300px;
+          }
+        }
+      }
+    }
+
+    .description {
+      background: #fff;
+      position: relative;
+    //   margin-left: 30px;
+    //   margin-right: 30px;
+      padding: 30px;
+
+      .left {
+        color: #01b4b9;
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .wrapper {
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      margin-top: -200px;
+
+      .title {
+        position: relative;
+
+        background: #eb5f1e;
+
+        width: 980px;
+        padding: 30px;
+
+        .left {
+          display: flex;
+          align-items: center;
+
+          width: 500px;
+          height: 240px;
+
+          font-size: 50px;
+          font-weight: bold;
+          line-height: 60px;
+
+          color: #fff;
+        }
+
+        .right {
+          position: absolute;
+          right: 70px;
+          top: 0;
+
+          img {
+            height: 300px;
+          }
+        }
+      }
+    }
+
+    .description {
+      position: relative;
+
+      background: #fff;
+
+      width: 980px;
+      padding: 30px;
+
+      .left {
+        width: 500px;
+
+        font-size: 16px;
+        font-weight: bold;
+
+        color: #eb5f1e;
+      }
+
+      .right {
+        position: absolute;
+        right: 75px;
+        top: 30px;
+
+        img {
+          height: 180px;
+        }
+      }
+    }
+  }
+
+  .survey {
+    background: #f2f2f2;
+    padding: 30px;
+    color: #202556;
+    font-family: "bold";
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 32px;
+
+    margin-bottom: 20px;
+
+    span {
+      color: #eb5f1e;
+    }
+  }
+}

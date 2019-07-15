@@ -1,0 +1,183 @@
+<div class="wrapper" [ngClass.lt-md]="{'wrapper-mob': true, 'wrapper': false}">
+
+    <app-trend-header fxHide.lt-md image="/assets/trend4-bg.jpeg"></app-trend-header>
+
+    <div class="content">
+
+        <div class="title" fxLayout.lt-md="column">
+
+            <div class="left " [innerHTML]="translationService.data?.trend_4_intro_title"></div>
+
+            <div class="right" fxLayoutAlign.lt-md="center">
+
+                <img src="/assets/trend4-icon.png">
+
+            </div>
+
+        </div>
+
+
+
+
+        <div class="description">
+
+            <div class="left">
+
+                <h1 style="margin: 0" [innerHTML]="translationService.data?.trend_4_header_list_title"></h1>
+
+                <ul>
+
+                    <li [innerHTML]="translationService.data?.trend_4_header_list_item_1"></li>
+                    <li [innerHTML]="translationService.data?.trend_4_header_list_item_2"></li>
+                    <li [innerHTML]="translationService.data?.trend_4_header_list_item_3"></li>
+                    <li [innerHTML]="translationService.data?.trend_4_header_list_item_4"></li>
+
+                </ul>
+
+            </div>
+
+            <div class="right" fxLayoutAlign.lt-md="center">
+
+                <a (click)="scrollTo('download')">
+
+                    <img src="/assets/trend4-download.png">
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+<app-trend-share></app-trend-share>
+
+<div class="col flex-center" style="padding: 50px 50px">
+
+    <div class="center">
+
+        <h1 [innerHTML]="translationService.data?.trend_4_block_1_title"></h1>
+
+        <p [innerHTML]="translationService.data?.trend_4_block_1_paragraph_1"></p>
+        <p [innerHTML]="translationService.data?.trend_4_block_1_paragraph_2"></p>
+
+        <div class="bars" style="margin-top: 100px; margin-bottom: 150px;">
+
+            <app-trend-horizontal-expander [title]="translationService.data?.trend_4_horizontal_1_title"
+                [callout]="translationService.data?.trend_4_horizontal_1_callout" icon="/assets/trend4-baricon-1.png"
+                color="#5F4F9B"></app-trend-horizontal-expander>
+
+            <app-trend-horizontal-expander [title]="translationService.data?.trend_4_horizontal_2_title"
+                [callout]="translationService.data?.trend_4_horizontal_2_callout" icon="/assets/trend4-baricon-2.png"
+                color="#5F4F9B"></app-trend-horizontal-expander>
+
+            <app-trend-horizontal-expander [title]="translationService.data?.trend_4_horizontal_3_title"
+                [callout]="translationService.data?.trend_4_horizontal_3_callout" icon="/assets/trend4-baricon-3.png"
+                color="#5F4F9B"></app-trend-horizontal-expander>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="col flex-center" style="background: #fff; padding: 100px">
+
+    <div class="center">
+
+        <h1 style="color: darkblue">ALTRAN – 2019 SURVEY</h1>
+
+        <div class="survey" [innerHTML]="translationService.data?.trend_4_survey_1"></div>
+
+        <p>Source: Altran 2019 DSCI Survey Report</p>
+
+    </div>
+
+</div>
+
+<div class="col flex-center" style="padding: 50px 50px">
+
+    <div class="center" style="margin-top: 50px; margin-bottom: 100px;">
+
+        <h1>APPLIED AI IS A TEAM SPORT</h1>
+
+        <p [innerHTML]="translationService.data?.trend_4_block_2_title"></p>
+
+        <ul>
+
+            <li [innerHTML]="translationService.data?.trend_4_block_2_list_item_1"></li>
+            <li [innerHTML]="translationService.data?.trend_4_block_2_list_item_2"></li>
+            <li [innerHTML]="translationService.data?.trend_4_block_2_list_item_3"></li>
+
+        </ul>
+
+    </div>
+
+</div>
+
+<div class="col flex-center" style="background: #fff; padding: 100px">
+
+    <div class="center">
+
+        <h1 style="color: darkblue">ALTRAN – 2019 SURVEY</h1>
+
+        <div class="survey" [innerHTML]="translationService.data?.trend_4_survey_2"></div>
+
+        <p>Source: Altran 2019 DSCI Survey Report</p>
+
+    </div>
+
+</div>
+
+
+<div class="col flex-center" style="padding: 50px 50px">
+
+    <div class="center" style="margin-top: 50px; margin-bottom: 100px;">
+
+        <h1 [innerHTML]="translationService.data?.trend_4_block_3_title"></h1>
+
+        <p [innerHTML]="translationService.data?.trend_4_block_3_paragraph_1"></p>
+        <p [innerHTML]="translationService.data?.trend_4_block_3_paragraph_2"></p>
+
+        <img fxHide.lt-md src="/assets/trend4-callout.png">
+        <img width="100%" fxHide fxShow.lt-md src="/assets/mobile/Asset 4@2x.png">
+
+        <p fxHide.lt-md class="citing">Source: Altran Technology Vision 2019 – Seeking Digital Alpha: Getting Real About Digital
+            Ambitions</p>
+
+        <h1 [innerHTML]="translationService.data?.trend_4_block_4_title"></h1>
+
+        <p [innerHTML]="translationService.data?.trend_4_block_4_paragraph_1"></p>
+        <p [innerHTML]="translationService.data?.trend_4_block_4_paragraph_2"></p>
+        <p [innerHTML]="translationService.data?.trend_4_block_4_paragraph_3"></p>
+
+        <div class="bars">
+
+            <app-trend-horizontal-expander [title]="translationService.data?.trend_4_horizontal_4_title"
+                [callout]="translationService.data?.trend_4_horizontal_4_callout" color="#5F4F9B">
+            </app-trend-horizontal-expander>
+
+            <app-trend-horizontal-expander [title]="translationService.data?.trend_4_horizontal_5_title"
+                [callout]="translationService.data?.trend_4_horizontal_5_callout" color="#5F4F9B">
+            </app-trend-horizontal-expander>
+
+            <app-trend-horizontal-expander [title]="translationService.data?.trend_4_horizontal_6_title"
+                [callout]="translationService.data?.trend_4_horizontal_6_callout" color="#5F4F9B">
+            </app-trend-horizontal-expander>
+
+            <app-trend-horizontal-expander [title]="translationService.data?.trend_4_horizontal_7_title"
+                [callout]="translationService.data?.trend_4_horizontal_7_callout" color="#5F4F9B">
+            </app-trend-horizontal-expander>
+
+        </div>
+
+    </div>
+
+</div>
+
+<app-trend-download></app-trend-download>
+
+<app-trend-footer src="/assets/footer-intro.png" link="/trends/intro"></app-trend-footer>

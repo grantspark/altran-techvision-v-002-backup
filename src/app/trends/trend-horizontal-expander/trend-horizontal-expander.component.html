@@ -1,0 +1,46 @@
+<div class="wrapper"
+     [class.with-icon]="icon"
+     [class.mat-elevation-z6]="expanded">
+
+    <div class="normal" *ngIf="!expanded" fxLayout.lt-md="column">
+
+        <div *ngIf="icon" class="icon" fxLayoutAlign.lt-md="center">
+
+            <img [src]="icon" fxLayoutAlign.lt-md="center">
+
+        </div>
+
+        <div class="left flex-left" [ngClass.lt-md]="{'left-mob':true, 'left':false}" [style.color]="color">
+
+            {{ title }}
+
+        </div>
+
+        <div fxHide.lt-md class="middle"></div>
+
+        <div class="right flex-center" [style.background-color]="color" [ngClass.lt-md]="{'right-mob':true, 'right': false}">
+
+            <div (click)="onReadMoreClick()" class="button flex-center">
+
+                READ MORE
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div *ngIf="expanded" class="callout" (click)="onCloseClick()" @fadeIn>
+
+        <div class="left">
+
+            <div class="title" [style.color]="color">{{ title }}</div>
+            <div class="cleft" [innerHTML]="callout"></div>
+
+        </div>
+
+        <div class="cright" (click)="onCloseClick()">x</div>
+
+    </div>
+
+</div>

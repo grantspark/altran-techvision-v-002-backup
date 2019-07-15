@@ -1,0 +1,33 @@
+h1 {
+    color: #01b4b9;
+  }
+  
+.lower {
+    position: relative;
+    padding: 20px;
+    padding-bottom: 0;
+
+    background: #fff;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    h1 {
+      font-size: 16px;
+      margin: 0;
+    }
+
+    p {
+      width: 400px;
+    }
+
+    .image {
+      position: absolute;
+
+      right: -30px;
+      top: 70px;
+
+      img {
+        height: 440px;
+      }
+    }
+  }

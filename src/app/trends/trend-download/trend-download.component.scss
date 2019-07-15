@@ -1,0 +1,123 @@
+:host {
+    
+    .wrapper {
+        
+        display: flex;
+        justify-content: center;
+        
+        background: #f2f2f2;
+        padding: 100px;
+        
+        .center {
+            
+            width: 1040px;
+            
+            background: #fff;
+            
+            h1 {
+                
+                text-align: center;
+                font-family: 'bold';
+                font-size: 26px;
+                
+            }
+            
+        }
+        
+        .flex {
+            
+            display: flex;
+            padding: 40px;
+            
+            .left {
+                
+                width: 360px;
+                margin-right: 20px;
+                
+                form {
+                    
+                    mat-form-field {
+                        
+                        width: 100%;
+                        
+                    }
+                    
+                }
+                
+            }
+            
+            .right {
+                
+                img {
+                    
+                    height: 350px;
+                    
+                }
+                
+            }
+            
+        }
+        
+    }
+    
+    a {
+        
+        font-style: italic;
+        
+    }
+    
+    .share {
+        
+        position: relative;
+        padding: 100px;
+        
+        .button {
+            
+            display: flex;
+            justify-content: center;
+            padding: 10px 0 40px;
+            
+        }
+        
+        h1 {
+            
+            margin-bottom: 50px;
+            font-size: 28px;
+            
+        }
+        
+        p {
+            
+            text-align: center;
+            font-size: 18px;
+            
+        }
+        
+        .outer {
+            
+            display: flex;
+            justify-content: center;
+            margin: 50px;
+            
+            .border {
+                
+                display: flex;
+                justify-content: center;
+                background: #f2f2f2;
+                padding: 60px;
+                
+                .component {
+                    
+                    app-trend-share {
+                    
+                    
+                    }
+                    
+                }
+                
+            }
+        }
+        
+    }
+    
+}

@@ -1,0 +1,33 @@
+<div 
+    fxLayoutAlign="left center"
+    class="wrapper"    
+    [ngClass.lt-md]="{'wrapper-mob': true, 'wrapper': false}"    
+
+     #div [routerLink]="link" (mouseover)="onMouseEnter()" (mouseleave)="onMouseLeave()"
+    [style.background]="backgroundColor">
+    <div>
+        <div class="icon" >
+
+            <img *ngIf="icon" [src]="icon" fxHide.lt-md="true">
+
+        </div>
+
+        <div class="title">
+
+            {{ title }}
+
+        </div>
+
+        <div class="subtitle">
+
+            {{ subtitle }}
+
+        </div>
+
+        <div class="button" [style.background]="buttonBackgroundColor">
+
+            {{ buttonText }}
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,131 @@
+:host {
+  .wrapper {
+    .normal {
+      display: flex;
+      align-items: center;
+
+      background: #fff;
+      position: relative;
+
+      margin-bottom: 10px;
+
+      .icon {
+        margin-left: 65px;
+        padding-top: 10px;
+
+        img {
+          height: 100px;
+        }
+      }
+
+      .left-mob {
+        padding: 50px;
+        text-align: left;
+
+        width: 95%;
+        
+        font-weight: bold;
+        font-size: 30px;
+      }
+
+      .left {
+        flex: 1;
+        height: 126px;
+        padding-left: 30px;
+        font-family: "demi";
+        font-size: 20px;
+      }
+
+      .middle {
+        position: absolute;
+        right: 270px;
+
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 63px 0 63px 30px;
+        border-color: transparent transparent transparent #ffffff;
+      }
+
+      .right-mob {
+        height: 80px;
+        width: 100%;
+        .button {
+          background: #fff;
+          font-size: 13px;
+          padding: 7px 50px;
+          cursor: pointer;
+
+          &:hover {
+            background: #ddd;
+          }
+        }
+      }
+      .right {
+        flex: 0 1 300px;
+        height: 126px;
+
+        .button {
+          background: #fff;
+          font-size: 13px;
+          padding: 7px 50px;
+          cursor: pointer;
+
+          &:hover {
+            background: #ddd;
+          }
+        }
+      }
+    }
+  }
+
+  .with-icon {
+    .left,
+    .right {
+    }
+
+    .middle {
+      border-width: 78px 0 78px 30px;
+    }
+  }
+
+  .callout {
+    margin: 20px 0;
+
+    transition: all 1s;
+
+    //position: absolute;
+    //right: 0;
+    //z-index: 100;
+    display: flex;
+
+    background: #fff;
+
+    //width: 300px;
+    border: 1px solid #ddd;
+    padding: 30px 30px 30px 30px;
+    flex: 1;
+
+    .left {
+      .title {
+        font-size: 22px;
+        font-family: "demi";
+      }
+    }
+
+    .cright {
+      flex: 0 1 20px;
+      margin-left: 10px;
+      font-size: 28px;
+      font-family: "regular";
+
+      color: #666;
+      cursor: pointer;
+
+      &:hover {
+        color: rebeccapurple;
+        font-weight: bold;
+      }
+    }
+  }
+}

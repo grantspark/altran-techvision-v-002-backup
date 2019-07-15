@@ -1,0 +1,72 @@
+:host {
+    
+    .wrapper {
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .back {
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            width: 100%;
+            height: 40px;
+            
+            color: #fff;
+            background: #1F2555;
+            font-size: 13px;
+            cursor: pointer;
+            
+            &:hover {
+                
+                background: #3c48a8;
+                
+            }
+        }
+        
+    }
+    
+    .footer {
+        
+        background: fuchsia;
+        // display: flex;
+        // height: 450px;
+        
+        .left {
+            
+            width: 180px;
+            height: 0px;
+            margin: 30px auto;
+            background: url('/assets/trend3-bg.jpeg');
+            //clip-path: polygon(100% 50%, 87% 0, 87% 100%);
+            //clip-path: polygon(50% 0, 0 100%, 100% 100%);
+            /*Chrome,Safari*/
+            
+        }
+        
+        
+        .middle {
+            
+            //position: absolute;
+            //right: calc(50% + 90px);
+            background: green;
+            //width: 0;
+            //height: 0;
+            //border-style: solid;
+            //border-width: 225px 0 225px 90px;
+            //border-color: transparent transparent transparent transparent;
+            //
+            width: 90px;
+            
+        }
+        
+        .right {
+        
+        }
+        
+    }
+    
+}

@@ -1,0 +1,128 @@
+<div class="wrapper" [ngClass.lt-md]="{'wrapper-mob': true, 'wrapper': false}">
+
+    <app-trend-header fxHide.lt-md image="/assets/trend1-bg.jpeg"></app-trend-header>
+
+
+    <div class="content">
+
+        <div class="title" fxLayout.lt-md="column">
+
+            <div class="left " [innerHTML]="translationService.data?.trend_1_title"></div>
+
+            <div class="right" fxLayoutAlign.lt-md="center">
+
+                <img src="/assets/trend1-redcircle.png">
+
+            </div>
+
+        </div>
+
+        <div class="description">
+
+            <div class="left">
+
+                <h1 style="margin: 0" [innerHTML]="translationService.data?.trend_1_header_list_title"></h1>
+
+                <ul>
+
+                    <li [innerHTML]="translationService.data?.trend_1_header_list_item_1"></li>
+                    <li [innerHTML]="translationService.data?.trend_1_header_list_item_2"></li>
+                    <li [innerHTML]="translationService.data?.trend_1_header_list_item_3"></li>
+                    <li [innerHTML]="translationService.data?.trend_1_header_list_item_4"></li>
+
+                </ul>
+
+            </div>
+
+            <div class="right" fxLayoutAlign.lt-md="center">
+
+                <a (click)="scrollTo('download')">
+
+                    <img src="/assets/trend1-download.png">
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<app-trend-share></app-trend-share>
+
+
+<div style="background: #f2f2f2; margin-left:30px; margin-right:30px; margin-top: -200px; padding-top: 100px; padding-bottom: 40px; justify-content: center;"
+    fxLayout.lt-md="column" fxLayoutAlign="center">
+
+    <div class="column" style="padding-top: 100px;">
+
+        <h1 [innerHTML]="translationService.data?.trend_1_block_1_title"></h1>
+        <p [innerHTML]="translationService.data?.trend_1_block_1_paragraph_1"></p>
+
+    </div>
+
+</div>
+
+<div fxLayoutAlign="center" style="background: #fff; padding: 100px">
+
+    <img width="1040" src="/assets/trend1-bar.png" fxHide.lt-md>
+    <img width="100%" src="/assets/mobile/Asset 3@2x.png" fxHide.gt-sm>
+
+</div>
+
+<div class="col flex-center" style="margin: 30px;">
+
+    <div class="center">
+
+        <h1 [innerHTML]="translationService.data?.trend_1_block_2_title"></h1>
+        <p [innerHTML]="translationService.data?.trend_1_block_2_paragraph_1"></p>
+
+    </div>
+
+</div>
+
+<div fxLayoutAlign="center" style="background: #fff; padding: 100px">
+
+    <img width="1040" src="/assets/trend1-survey1.jpeg" fxHide.lt-md>
+    <img width="100%" src="/assets/mobile/Asset 5@2x.png" fxHide.gt-sm>
+
+</div>
+
+<div class="col flex-center" style="margin: 30px;">
+
+    <div class="center">
+
+        <h1 [innerHTML]="translationService.data?.trend_1_block_3_title"></h1>
+
+        <p [innerHTML]="translationService.data?.trend_1_block_3_paragraph_1"></p>
+        <p [innerHTML]="translationService.data?.trend_1_block_3_paragraph_2"></p>
+
+        <ol>
+
+            <li [innerHTML]="translationService.data?.trend_1_block_list_item_1"></li>
+            <li [innerHTML]="translationService.data?.trend_1_block_list_item_2"></li>
+            <li [innerHTML]="translationService.data?.trend_1_block_list_item_3"></li>
+            <li [innerHTML]="translationService.data?.trend_1_block_list_item_4"></li>
+
+        </ol>
+
+        <h1 [innerHTML]="translationService.data?.trend_1_block_4_title"></h1>
+
+        <p [innerHTML]="translationService.data?.trend_1_block_4_paragraph_1"></p>
+
+    </div>
+
+</div>
+
+<div class="col flex-center" style="background: #fff; padding: 100px">
+
+    <img width="1040" src="/assets/trend1-survey2.jpeg" fxHide.lt-md>
+    <img width="100%" src="/assets/mobile/Asset 6@2x.png" fxHide.gt-sm>
+
+</div>
+
+<app-trend-download></app-trend-download>
+
+<app-trend-footer src="/assets/footer-trend2.png" link="/trends/2"></app-trend-footer>

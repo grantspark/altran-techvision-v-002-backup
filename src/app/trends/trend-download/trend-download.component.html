@@ -1,0 +1,144 @@
+<div class="wrapper">
+
+    <a name="download"></a>
+
+    <div *ngIf="!submitted" class="center mat-elevation-z24">
+
+        <h1 [innerHTML]="translationService.data?.trend_download_title"></h1>
+
+        <div class="flex">
+
+            <div class="left">
+
+                <form [formGroup]="formGroup">
+
+                    <div>
+
+                        <mat-form-field>
+
+                            <input matInput
+                                   [placeholder]="translationService.data?.trend_download_placeholder_firstname"
+                                   formControlName="firstname">
+
+                        </mat-form-field>
+
+                    </div>
+
+                    <div>
+
+                        <mat-form-field>
+
+                            <input matInput
+                                   [placeholder]="translationService.data?.trend_download_placeholder_lastname"
+                                   formControlName="lastname">
+
+                        </mat-form-field>
+
+                    </div>
+
+                    <div>
+
+                        <mat-form-field>
+
+                            <input matInput
+                                   [placeholder]="translationService.data?.trend_download_placeholder_email"
+                                   formControlName="email">
+
+                        </mat-form-field>
+
+                    </div>
+
+                    <div>
+
+                        <mat-form-field>
+
+                            <input matInput
+                                   [placeholder]="translationService.data?.trend_download_placeholder_company"
+                                   formControlName="company">
+
+                        </mat-form-field>
+
+                    </div>
+
+                    <div>
+
+                        <mat-form-field>
+
+                            <input matInput
+                                   [placeholder]="translationService.data?.trend_download_placeholder_phone"
+                                   formControlName="phone">
+
+                        </mat-form-field>
+
+                    </div>
+
+                    <div class="flex-center">
+
+                        <button mat-raised-button
+                                [disabled]="!formGroup.valid"
+                                style="background: #1F2556; color: #fff; width: 400px; margin-right: 10px;"
+                                (click)="onSubmitClick()">
+
+                            {{ translationService.data?.trend_download_submit_button_text }}
+
+                        </button>
+
+                        <img width="40" src="/assets/trend-download-icon.png">
+
+                    </div>
+
+                    <div style="margin-top: 20px;">
+
+                        <mat-checkbox style="font-size: 13px; white-space:normal !important;" [formControl]="formGroup.get('subscribed')">
+
+                            {{ translationService.data?.trend_download_subscribe }}
+
+                        </mat-checkbox>
+
+                    </div>
+
+                    <div style="width: 500px; font-size: 13px; margin-top: 20px;" [innerHTML]="translationService.data?.trend_download_terms"></div>
+
+                </form>
+
+            </div>
+
+            <div class="right" fxHide.lt-md>
+
+                <img src="/assets/trend-download.jpeg">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div *ngIf="submitted" class="center mat-elevation-z24 share">
+
+        <h1 [innerHTML]="translationService.data?.trend_download_thanks_title"></h1>
+
+        <div class="button">
+
+            <button mat-raised-button color="accent" onclick="window.open('https://storage.googleapis.com/altran-techvision2019/Altran-TechVision-2019.pdf')">DOWNLOAD PDF</button>
+
+        </div>
+
+        <p [innerHTML]="translationService.data?.trend_download_thanks_paragraph_1"></p>
+
+        <div class="outer">
+
+            <div class="border">
+
+                <div class="component">
+
+                    <app-trend-share [basic]="true"></app-trend-share>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

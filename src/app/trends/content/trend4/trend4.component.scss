@@ -111,7 +111,7 @@ $break-small: 959px;
   ul {
     margin: 0.75em 40px;
     padding: 0 1em;
-    list-style: none;
+    // list-style: none;
   }
 
   li {
@@ -124,16 +124,16 @@ $break-small: 959px;
     }
   }
 
-  li:before {
-    content: "";
-    border-color: transparent #5f4f9b;
-    border-style: solid;
-    border-width: 0.4em 0 0.4em 0.5em;
-    display: block;
-    height: 0;
-    width: 0;
-    left: -1em;
-    top: 20px;
-    position: relative;
-  }
+  // li:before {
+  //   content: "";
+  //   border-color: transparent #5f4f9b;
+  //   border-style: solid;
+  //   border-width: 0.4em 0 0.4em 0.5em;
+  //   display: block;
+  //   height: 0;
+  //   width: 0;
+  //   left: -1em;
+  //   top: 20px;
+  //   position: relative;
+  // }
 }

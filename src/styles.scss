@@ -38,6 +38,16 @@
 
 $break-small: 959px;
 
+h1 .survey-title {
+  color: #1E2659;
+
+  @media screen and (max-width: $break-small) {
+    font-size: 25pt;
+    font-family: "demi";
+    line-height: 40pt;
+  }
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -70,11 +80,51 @@ h1 {
 
   font-family: "heavy";
 
-  @media screen and (max-width: $break-small){
-    margin-top: 50px;    
-    font-weight: bold;
+  @media screen and (max-width: $break-small) {
     font-size: 30pt;
-    line-height: 55px;    
+    line-height: 40pt;
+  }
+}
+
+.column {
+  ol {
+    counter-reset: item;
+    margin: 0;
+    padding-left: 0;
+  }
+
+  ol > li {
+    counter-increment: item;
+    list-style: none-inside;
+    margin: 50px 0;
+    overflow: hidden;
+    font-size: 18pt !important;
+    display: block;
+    line-height: 32.4pt;
+  }
+
+  ol > li:before {
+    content: counter(item);
+    margin-right: 20px;
+    padding: 8px;
+    display: block;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width: 30px;
+    background: #fe862c;
+    color: #fff;
+    text-align: center;
+    font-weight: 100;
+    font: 18pt "Lato", Helvetica, Arial, sans-serif;
+    float: left;
+  }
+
+  @media screen and (max-width: $break-small) {
+    p {
+      font-size: 18pt;
+      line-height: 32.4pt;
+    }
   }
 }
 
@@ -129,6 +179,54 @@ button[disabled] {
   a {
     img {
       cursor: pointer;
+    }
+  }
+}
+
+.wrapper-mob {
+  .content {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .left {
+    font-size: 30pt;
+    font-weight: bold;
+    line-height: 50px;
+    padding: 30px;
+    color: #fff;
+  }
+
+  .right {
+    img {
+      height: 300px;
+    }
+  }
+
+  .description {
+    background: #fff;
+    position: relative;
+
+    padding: 30px;
+
+    .left {
+      h1 {
+        font-size: 30pt;
+        line-height: 38pt;
+        font-weight: bold;
+      }
+
+      li {
+        margin-left: -20px;
+        font-size: 18pt;
+        line-height: 26pt;
+      }
+    }
+
+    .right {
+      img {
+        height: 200px;
+      }
     }
   }
 }

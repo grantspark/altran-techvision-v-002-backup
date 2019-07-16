@@ -23,24 +23,24 @@ $break-small: 959px;
         img {
           height: 100px;
 
-          @media screen and (max-width: $break-small){
+          @media screen and (max-width: $break-small) {
             height: 200px;
           }
         }
 
-        @media screen and (max-width: $break-small){
-          margin-left: 0px;          
+        @media screen and (max-width: $break-small) {
+          margin-left: 0px;
         }
       }
 
       .left-mob {
-        padding: 50px;
         text-align: left;
-
+        vertical-align: top;
         width: 95%;
-        
+        height: 175px;
         font-weight: bold;
-        font-size: 30px;
+        font-size: 24pt;
+        line-height: 30pt;
       }
 
       .left {
@@ -64,9 +64,11 @@ $break-small: 959px;
 
       .right-mob {
         height: 80px;
+        
         width: 100%;
         .button {
           background: #fff;
+          float: left;
           font-size: 13px;
           padding: 7px 50px;
           cursor: pointer;

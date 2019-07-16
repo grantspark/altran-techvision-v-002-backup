@@ -1,3 +1,5 @@
+$break-small: 959px;
+
 :host {
   h1 {
     color: #5f4f9b;
@@ -5,50 +7,21 @@
 
   .wrapper-mob {
     .content {
-      margin-left: 30px;
-      margin-right: 30px;
-
       .title {
         background: #5f4f9b;
-
-        .left {
-          font-size: 45px;
-          font-weight: bold;
-          line-height: 50px;
-          padding: 30px;
-          color: #fff;
-        }
-
-        .right {
-          img {
-            height: 300px;
-          }
-        }
       }
     }
 
     .description {
-      background: #fff;
-      position: relative;
-
-      padding: 30px;
-
       .left {
         color: #5f4f9b;
-
-        font-size: 16px;
-        font-weight: bold;
       }
+    }
+  }
 
-    //   .right {
-    //     position: absolute;
-    //     right: 70px;
-    //     top: 30px;
-
-    //     img {
-    //       height: 180px;
-    //     }
-    //   }
+  .column {
+    ol > li:before {
+      background: #5f4f9b;
     }
   }
 
@@ -147,6 +120,12 @@
 
   li {
     margin-bottom: 15px;
+
+    @media screen and (max-width: $break-small) {
+      margin-left: 25px;
+      font-size: 18pt;
+      line-height: 32.4pt;
+    }
   }
 
   li:before {

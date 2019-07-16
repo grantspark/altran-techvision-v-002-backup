@@ -11,17 +11,17 @@
             </div>
         </div>
         <div *ngIf="expanded">
-            <div *ngFor="let p of paragraphs">
+            <div class="column" *ngFor="let p of paragraphs">
                 <p fxFlex.lt-md="100" [innerHTML]="p"></p>
             </div>
         </div>
     </div>
-    <div fxFlex.lt-md="0 1 100">
+    
         <img [src]="imgsrc" width="100%">
-    </div>
+    
 </div>
 
-<div class="lower" fxHide.lt-md="column" style="background: #FFFFFF">
+<div class="lower" fxHide.lt-md fxLayout="column" style="background: #FFFFFF">
     <h1 fxFlex.lt-md="100" [innerHTML]="title"></h1>
 
     <div class="image" fxFlex.lt-md="50" [ngClass.lt-md]="{'image': false}">

@@ -48,27 +48,27 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
             {
 
-                path: 'trends/intro',
+                path: 'trends/Introduction',
                 component: IntroComponent
 
             }, {
 
-                path: 'trends/1',
+                path: 'trends/01-PLAYING-THE-SPECTRUM-OF-DISRUPTION',
                 component: Trend1Component
 
             }, {
 
-                path: 'trends/2',
+                path: 'trends/02-INNOVATE-ON-DOMINANT-ARCHITECTURES',
                 component: Trend2Component
 
             }, {
 
-                path: 'trends/3',
+                path: 'trends/03-BEYOND-DIGITAL-DISCONTENT',
                 component: Trend3Component
 
             }, {
 
-                path: 'trends/4',
+                path: 'trends/04-FOCUS-ON-STELLAR-AI-FUNDAMENTALS',
                 component: Trend4Component
 
             }

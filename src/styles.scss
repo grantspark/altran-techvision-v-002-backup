@@ -38,12 +38,13 @@
 
 $break-small: 959px;
 
-h1 .survey-title {
-  color: #1E2659;
+.survey-title {
+  color: #1e2659 !important;
+  font-family: "demi";
+  font-weight: normal;
 
   @media screen and (max-width: $break-small) {
     font-size: 25pt;
-    font-family: "demi";
     line-height: 40pt;
   }
 }
@@ -87,6 +88,9 @@ h1 {
 }
 
 .column {
+  width: 794px;
+  
+
   ol {
     counter-reset: item;
     margin: 0;
@@ -125,6 +129,9 @@ h1 {
       font-size: 18pt;
       line-height: 32.4pt;
     }
+
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 

@@ -49,7 +49,7 @@
 
 <app-trend-share></app-trend-share>
 
-<div class="col flex-center" style="padding: 50px 50px">
+<div fxLayout.lt-md="column" fxLayoutAlign="center">
 
     <div class="column">
 
@@ -215,12 +215,12 @@
     <div style="background: #01B4B9; width: 990px; padding: 50px;" [ngStyle.lt-md]="{'width': '100%'}">
         <app-trend-card [title]="translationService.data?.trend_2_block_3_title"
             [paragraphs]="[translationService.data?.trend_2_block_3_paragraph_1, translationService.data?.trend_2_block_3_paragraph_2]"
-            [imgsrc]="'/assets/trend2-lower-1.jpeg'">
+            [imgsrc]="'/assets/trend2-lower-2.jpeg'">
         </app-trend-card>
 
         <app-trend-card [title]="translationService.data?.trend_2_block_4_title"
             [paragraphs]="[translationService.data?.trend_2_block_4_paragraph_1]"
-            [imgsrc]="'/assets/trend2-lower-2.jpeg'"></app-trend-card>
+            [imgsrc]="'/assets/trend2-lower-1.jpeg'"></app-trend-card>
 
         <app-trend-card [title]="translationService.data?.trend_2_block_5_title"
             [paragraphs]="[translationService.data?.trend_2_block_5_paragraph_1, translationService.data?.trend_2_block_5_paragraph_2]"
@@ -246,4 +246,4 @@
 
 <app-trend-download></app-trend-download>
 
-<app-trend-footer src="/assets/footer-trend3.png" link="/trends/3"></app-trend-footer>
+<app-trend-footer src="/assets/footer-trend3.png" link="/trends/03-BEYOND-DIGITAL-DISCONTENT"></app-trend-footer>

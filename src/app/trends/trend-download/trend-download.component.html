@@ -2,9 +2,9 @@
 
     <a name="download"></a>
 
-    <div *ngIf="!submitted" class="center mat-elevation-z24">
+    <div *ngIf="!submitted" class="mat-elevation-z24" style="padding: 30px">
 
-        <h1 [innerHTML]="translationService.data?.trend_download_title"></h1>
+        <h2 [innerHTML]="translationService.data?.trend_download_title"></h2>
 
         <div class="flex">
 
@@ -17,8 +17,8 @@
                         <mat-form-field>
 
                             <input matInput
-                                   [placeholder]="translationService.data?.trend_download_placeholder_firstname"
-                                   formControlName="firstname">
+                                [placeholder]="translationService.data?.trend_download_placeholder_firstname"
+                                formControlName="firstname">
 
                         </mat-form-field>
 
@@ -28,9 +28,8 @@
 
                         <mat-form-field>
 
-                            <input matInput
-                                   [placeholder]="translationService.data?.trend_download_placeholder_lastname"
-                                   formControlName="lastname">
+                            <input matInput [placeholder]="translationService.data?.trend_download_placeholder_lastname"
+                                formControlName="lastname">
 
                         </mat-form-field>
 
@@ -40,9 +39,8 @@
 
                         <mat-form-field>
 
-                            <input matInput
-                                   [placeholder]="translationService.data?.trend_download_placeholder_email"
-                                   formControlName="email">
+                            <input matInput [placeholder]="translationService.data?.trend_download_placeholder_email"
+                                formControlName="email">
 
                         </mat-form-field>
 
@@ -52,9 +50,8 @@
 
                         <mat-form-field>
 
-                            <input matInput
-                                   [placeholder]="translationService.data?.trend_download_placeholder_company"
-                                   formControlName="company">
+                            <input matInput [placeholder]="translationService.data?.trend_download_placeholder_company"
+                                formControlName="company">
 
                         </mat-form-field>
 
@@ -64,9 +61,8 @@
 
                         <mat-form-field>
 
-                            <input matInput
-                                   [placeholder]="translationService.data?.trend_download_placeholder_phone"
-                                   formControlName="phone">
+                            <input matInput [placeholder]="translationService.data?.trend_download_placeholder_phone"
+                                formControlName="phone">
 
                         </mat-form-field>
 
@@ -74,10 +70,9 @@
 
                     <div class="flex-center">
 
-                        <button mat-raised-button
-                                [disabled]="!formGroup.valid"
-                                style="background: #1F2556; color: #fff; width: 400px; margin-right: 10px;"
-                                (click)="onSubmitClick()">
+                        <button mat-raised-button [disabled]="!formGroup.valid"
+                            style="background: #1F2556; color: #fff; width: 400px; margin-right: 10px;"
+                            (click)="onSubmitClick()">
 
                             {{ translationService.data?.trend_download_submit_button_text }}
 
@@ -87,9 +82,10 @@
 
                     </div>
 
-                    <div style="margin-top: 20px;">
+                    <div style="margin-top: 20px;overflow:wrap">
 
-                        <mat-checkbox style="font-size: 13px; white-space:normal !important;" [formControl]="formGroup.get('subscribed')">
+                        <mat-checkbox style="font-size: 13px; white-space:normal !important;"
+                            [formControl]="formGroup.get('subscribed')">
 
                             {{ translationService.data?.trend_download_subscribe }}
 
@@ -97,7 +93,8 @@
 
                     </div>
 
-                    <div style="width: 500px; font-size: 13px; margin-top: 20px;" [innerHTML]="translationService.data?.trend_download_terms"></div>
+                    <div style="font-size: 13px; margin-top: 20px;"
+                        [innerHTML]="translationService.data?.trend_download_terms"></div>
 
                 </form>
 
@@ -119,7 +116,9 @@
 
         <div class="button">
 
-            <button mat-raised-button color="accent" onclick="window.open('https://storage.googleapis.com/altran-techvision2019/Altran-TechVision-2019.pdf')">DOWNLOAD PDF</button>
+            <button mat-raised-button color="accent"
+                onclick="window.open('https://storage.googleapis.com/altran-techvision2019/Altran-TechVision-2019.pdf')">DOWNLOAD
+                PDF</button>
 
         </div>
 

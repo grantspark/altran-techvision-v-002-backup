@@ -1,3 +1,5 @@
+$break-small: 959px;
+
 :host {
   .wrapper {
     .normal {
@@ -9,12 +11,25 @@
 
       margin-bottom: 10px;
 
+      // @media screen and (max-width: $break-small){
+      //   width: 350px;
+      //   align-content: center;
+      // }
+
       .icon {
         margin-left: 65px;
         padding-top: 10px;
 
         img {
           height: 100px;
+
+          @media screen and (max-width: $break-small){
+            height: 200px;
+          }
+        }
+
+        @media screen and (max-width: $break-small){
+          margin-left: 0px;          
         }
       }
 

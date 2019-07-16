@@ -30,7 +30,7 @@ $break-small: 959px;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
+       align-items: center;
 
       margin-top: -200px;
 
@@ -77,11 +77,7 @@ $break-small: 959px;
       padding: 30px;
 
       .left {
-        width: 550px;
-
-        font-size: 16px;
-        font-weight: bold;
-
+     
         color: #01b4b9;
       }
 
@@ -128,7 +124,7 @@ $break-small: 959px;
           line-height: 20px;
           font-size: 15px;
 
-          @media screen  and (max-width: $break-small) {
+          @media screen and (max-width: $break-small) {
             font-size: 18pt;
             line-height: 26pt;
             height: 127px;
@@ -138,7 +134,7 @@ $break-small: 959px;
         .bottom-mob {
           padding: 20px;
           font-size: 18pt;
-          line-height: 32.4pt;          
+          line-height: 32.4pt;
           min-height: 100px;
         }
 

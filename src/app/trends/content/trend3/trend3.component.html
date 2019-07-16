@@ -3,50 +3,27 @@
     <app-trend-header image="/assets/trend3-bg.jpeg" fxHide.lt-md></app-trend-header>
 
     <div class="content">
-
         <div class="title" fxLayout.lt-md="column">
-
             <div class="left" [innerHTML]="translationService.data?.trend_3_title"></div>
-
             <div class="right" fxLayoutAlign.lt-md="center">
-
                 <img src="/assets/trend3-icon.png">
-
             </div>
-
         </div>
-
-
-
-
-
         <div class="description">
-
             <div class="left">
-
                 <h1 style="margin: 0" [innerHTML]="translationService.data?.trend_3_header_list_title"></h1>
-
                 <ul>
-
                     <li [innerHTML]="translationService.data?.trend_3_header_list_item_1"></li>
                     <li [innerHTML]="translationService.data?.trend_3_header_list_item_2"></li>
                     <li [innerHTML]="translationService.data?.trend_3_header_list_item_3"></li>
                     <li [innerHTML]="translationService.data?.trend_3_header_list_item_4"></li>
-
                 </ul>
-
             </div>
-
             <div class="right" fxLayoutAlign.lt-md="center">
-
                 <a (click)="scrollTo('download')">
-
                     <img src="/assets/trend3-download.png">
-
                 </a>
-
             </div>
-
         </div>
 
 
@@ -55,7 +32,7 @@
 
 <app-trend-share></app-trend-share>
 
-<div class="col flex-center" style="padding: 50px 50px">
+<div fxLayout.lt-md="column" fxLayoutAlign="center">
 
     <div class="column">
 
@@ -105,6 +82,8 @@
                 [callout]="translationService.data[b.callout]">
             </app-trend-horizontal-expander>
         </div>
+        <br><br>
+        <img style="padding: 20px;" width="100%" src="/assets/mobile/LessControl@2x.png">
     </div>
 </div>
 

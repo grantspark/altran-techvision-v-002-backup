@@ -30,41 +30,12 @@ $break-small: 959px;
       display: flex;
       flex-direction: column;
       justify-content: center;
-       align-items: center;
+      align-items: center;
 
       margin-top: -200px;
 
       .title {
-        position: relative;
-
         background: #01b4b9;
-
-        width: 980px;
-        padding: 30px;
-        height: 240px;
-        .left {
-          display: flex;
-          align-items: center;
-
-          width: 500px;
-          height: 240px;
-
-          font-size: 50px;
-          font-weight: bold;
-          line-height: 60px;
-
-          color: #fff;
-        }
-
-        .right {
-          position: absolute;
-          right: 70px;
-          top: 0;
-
-          img {
-            height: 300px;
-          }
-        }
       }
     }
 
@@ -77,7 +48,6 @@ $break-small: 959px;
       padding: 30px;
 
       .left {
-     
         color: #01b4b9;
       }
 
@@ -122,7 +92,7 @@ $break-small: 959px;
           color: #fff;
           font-family: "demi";
           line-height: 20px;
-          font-size: 15px;
+          font-size: 18px;
 
           @media screen and (max-width: $break-small) {
             font-size: 18pt;
@@ -141,7 +111,7 @@ $break-small: 959px;
         .bottom {
           height: 220px;
           padding: 20px;
-          font-size: 14px;
+          font-size: 18px;
         }
       }
     }

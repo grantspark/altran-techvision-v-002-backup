@@ -38,31 +38,7 @@
       margin-top: -200px;
 
       .title {
-        position: relative;
-
         background: #e53340;
-
-        width: 980px;
-        padding: 30px;
-        height: 240px;
-
-        .left {
-          font-size: 50px;
-          font-weight: bold;
-          line-height: 60px;
-
-          color: #fff;
-        }
-
-        .right {
-          position: absolute;
-          right: 100px;
-          top: 35px;
-
-          img {
-            height: 240px;
-          }
-        }
       }
     }
 

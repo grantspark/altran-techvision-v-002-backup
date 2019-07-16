@@ -1,34 +1,39 @@
 h1 {
-    color: #01b4b9;
-  }
-  
+  color: #01b4b9;
+}
+
 .lower {
-    position: relative;
-    padding: 20px;
-    padding-bottom: 0;
+  position: relative;
+  padding: 20px;
+  padding-bottom: 0;
+  width: 1000px;
+  background: #fff;
+  margin-top: 50px;
+  margin-left: 145px;
+  margin-right: 145px;
+  margin-bottom: 100px;
 
-    background: #fff;
-    margin-top: 50px;
-    margin-bottom: 50px;
+  h1 {
+    font-size: 18pt;
+    line-height: 30pt;
+    margin: 0;
+  }
 
-    h1 {
-      font-size: 18pt;
-      line-height: 30pt;
-      margin: 0;
-    }
+  p {
+    width: 477px;
+    font-size: 18px;    
+    line-height: 32.4px;
+  }
 
-    p {
-      width: 400px;
-    }
+  .image {
+    position: absolute;
 
-    .image {
-      position: absolute;
-
-      right: -30px;
-      top: 70px;
-margin-bottom: 0px;
-      img {
-        height: 440px;
-      }
+    right: -30px;
+    top: 70px;
+    
+    margin-top: 16px;
+    img {
+      width: 480px;
     }
   }
+}

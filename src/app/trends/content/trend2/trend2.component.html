@@ -5,22 +5,14 @@
     <app-trend-header fxHide.lt-md image="/assets/trend2-bg.jpeg"></app-trend-header>
 
     <div class="content">
-
         <div class="title" fxLayout.lt-md="column">
-            <div class="left" [innerHTML]="translationService.data?.trend_2_title"></div>
-
-            <div class="right" fxLayoutAlign.lt-md="center">
-
+            <div class="left" fxFlex.lt-md="100" [innerHTML]="translationService.data?.trend_2_title"></div>
+            <div class="right" fxFlex.lt-md="100" fxLayoutAlign.lt-md="center">
                 <img src="/assets/trend2-icon.png">
             </div>
         </div>
-
-
-
         <div class="description">
-
             <div class="left">
-
                 <h1 style="margin: 0" [innerHTML]="translationService.data?.trend_2_header_list_title"></h1>
 
                 <ul>
@@ -47,134 +39,136 @@
     </div>
 
 
-<app-trend-share></app-trend-share>
+    <app-trend-share></app-trend-share>
 
-<div fxLayout.lt-md="column" fxLayoutAlign="center">
+    <div fxLayout.lt-md="column" fxLayoutAlign="center">
 
-    <div class="column">
+        <div class="column">
 
-        <h1 [innerHTML]="translationService.data?.trend_2_block_1_title"></h1>
+            <h1 [innerHTML]="translationService.data?.trend_2_block_1_title"></h1>
 
-        <p [innerHTML]="translationService.data?.trend_2_block_1_paragraph_1"></p>
-        <p [innerHTML]="translationService.data?.trend_2_block_1_paragraph_2"></p>
+            <p [innerHTML]="translationService.data?.trend_2_block_1_paragraph_1"></p>
+            <p [innerHTML]="translationService.data?.trend_2_block_1_paragraph_2"></p>
+
+        </div>
 
     </div>
 
-</div>
+    <div class="col flex-center" style="padding: 50px 50px 150px;">
 
-<div class="col flex-center" style="padding: 50px 50px 150px;">
+        <div class="center" style="background: #fff; padding: 50px 140px; width: 900px;">
 
-    <div class="center" style="background: #fff; padding: 50px 140px; width: 900px;">
+            <h1 style="text-align: center; margin: 30px; color: #113058; font-family: 'demi'; font-size: 35px;"
+                [innerHTML]="translationService.data?.trend_2_bars_title"></h1>
 
-        <h1 style="text-align: center; margin: 30px; color: #113058; font-family: 'demi'; font-size: 30px;"
-            [innerHTML]="translationService.data?.trend_2_bars_title"></h1>
+            <div class="inner">
 
-        <div class="inner">
+                <div class="verticals" fxLayout.lt-md="column">
 
-            <div class="verticals" fxLayout.lt-md="column">
+                    <div class="vertical" [ngStyle.lt-md]="{'width':'100%'}">
+                        <div class="top" [innerHTML]="translationService.data?.trend_2_verticals_1_title"></div>
+                        <div class="bottom" [ngClass.lt-md]="{'bottom-mob': true, 'bottom': false}"
+                            [innerHTML]="translationService.data?.trend_2_verticals_1_description"></div>
+                    </div>
 
-                <div class="vertical" [ngStyle.lt-md]="{'width':'100%'}">
-                    <div class="top" [innerHTML]="translationService.data?.trend_2_verticals_1_title"></div>
-                    <div class="bottom" [ngClass.lt-md]="{'bottom-mob': true, 'bottom': false}"
-                        [innerHTML]="translationService.data?.trend_2_verticals_1_description"></div>
+                    <div class="vertical" [ngStyle.lt-md]="{'width':'100%'}">
+
+                        <div class="top" [innerHTML]="translationService.data?.trend_2_verticals_2_title"></div>
+                        <div class="bottom" [ngClass.lt-md]="{'bottom-mob': true, 'bottom': false}"
+                            [innerHTML]="translationService.data?.trend_2_verticals_2_description"></div>
+
+                    </div>
+
+                    <div class="vertical" [ngStyle.lt-md]="{'width':'100%'}">
+
+                        <div class="top" [innerHTML]="translationService.data?.trend_2_verticals_3_title"></div>
+                        <div class="bottom" [ngClass.lt-md]="{'bottom-mob': true, 'bottom': false}"
+                            [innerHTML]="translationService.data?.trend_2_verticals_3_description"></div>
+
+                    </div>
+
+                    <div class="vertical" [ngStyle.lt-md]="{'width':'100%'}">
+
+                        <div class="top" [innerHTML]="translationService.data?.trend_2_verticals_4_title"></div>
+                        <div class="bottom" [ngClass.lt-md]="{'bottom-mob': true, 'bottom': false}"
+                            [innerHTML]="translationService.data?.trend_2_verticals_4_description"></div>
+
+                    </div>
+
+                    <div class="vertical" [ngStyle.lt-md]="{'width':'100%'}">
+
+                        <div class="top" [innerHTML]="translationService.data?.trend_2_verticals_5_title"></div>
+                        <div class="bottom" [ngClass.lt-md]="{'bottom-mob': true, 'bottom': false}"
+                            [innerHTML]="translationService.data?.trend_2_verticals_5_description"></div>
+
+                    </div>
+
                 </div>
 
-                <div class="vertical" [ngStyle.lt-md]="{'width':'100%'}">
+                <div class="bars">
 
-                    <div class="top" [innerHTML]="translationService.data?.trend_2_verticals_2_title"></div>
-                    <div class="bottom" [ngClass.lt-md]="{'bottom-mob': true, 'bottom': false}"
-                        [innerHTML]="translationService.data?.trend_2_verticals_2_description"></div>
+                    <app-trend-horizontal-expander [title]="translationService.data?.trend_2_horizontal_1_title"
+                        [callout]="translationService.data?.trend_2_horizontal_1_callout" color="#51B2B7">
+                    </app-trend-horizontal-expander>
+
+                    <app-trend-horizontal-expander [title]="translationService.data?.trend_2_horizontal_2_title"
+                        [callout]="translationService.data?.trend_2_horizontal_2_callout" color="#51B2B7">
+                    </app-trend-horizontal-expander>
+
+                    <app-trend-horizontal-expander [title]="translationService.data?.trend_2_horizontal_3_title"
+                        [callout]="translationService.data?.trend_2_horizontal_3_callout" color="#51B2B7">
+                    </app-trend-horizontal-expander>
+
+                    <app-trend-horizontal-expander [title]="translationService.data?.trend_2_horizontal_4_title"
+                        [callout]="translationService.data?.trend_2_horizontal_4_callout" color="#51B2B7">
+                    </app-trend-horizontal-expander>
+
+                    <app-trend-horizontal-expander [title]="translationService.data?.trend_2_horizontal_5_title"
+                        [callout]="translationService.data?.trend_2_horizontal_5_callout" color="#51B2B7">
+                    </app-trend-horizontal-expander>
+
+                    <app-trend-horizontal-expander [title]="translationService.data?.trend_2_horizontal_6_title"
+                        [callout]="translationService.data?.trend_2_horizontal_6_callout" color="#51B2B7">
+                    </app-trend-horizontal-expander>
+
+                    <app-trend-horizontal-expander [title]="translationService.data?.trend_2_horizontal_7_title"
+                        [callout]="translationService.data?.trend_2_horizontal_7_callout" color="#51B2B7">
+                    </app-trend-horizontal-expander>
+
+                    <app-trend-horizontal-expander [title]="translationService.data?.trend_2_horizontal_8_title"
+                        [callout]="translationService.data?.trend_2_horizontal_8_callout" color="#51B2B7">
+                    </app-trend-horizontal-expander>
+
+                    <app-trend-horizontal-expander [title]="translationService.data?.trend_2_horizontal_9_title"
+                        [callout]="translationService.data?.trend_2_horizontal_9_callout" color="#51B2B7">
+                    </app-trend-horizontal-expander>
+
+                    <app-trend-horizontal-expander [title]="translationService.data?.trend_2_horizontal_10_title"
+                        [callout]="translationService.data?.trend_2_horizontal_10_callout" color="#51B2B7">
+                    </app-trend-horizontal-expander>
+
+                    <app-trend-horizontal-expander [title]="translationService.data?.trend_2_horizontal_11_title"
+                        [callout]="translationService.data?.trend_2_horizontal_11_callout" color="#51B2B7">
+                    </app-trend-horizontal-expander>
+
+                    <app-trend-horizontal-expander [title]="translationService.data?.trend_2_horizontal_12_title"
+                        [callout]="translationService.data?.trend_2_horizontal_12_callout" color="#51B2B7">
+                    </app-trend-horizontal-expander>
+
+                    <app-trend-horizontal-expander [title]="translationService.data?.trend_2_horizontal_13_title"
+                        [callout]="translationService.data?.trend_2_horizontal_13_callout" color="#51B2B7">
+                    </app-trend-horizontal-expander>
+
+                    <app-trend-horizontal-expander [title]="translationService.data?.trend_2_horizontal_14_title"
+                        [callout]="translationService.data?.trend_2_horizontal_14_callout" color="#51B2B7">
+                    </app-trend-horizontal-expander>
+
+                    <app-trend-horizontal-expander [title]="translationService.data?.trend_2_horizontal_15_title"
+                        [callout]="translationService.data?.trend_2_horizontal_15_callout" color="#51B2B7">
+                    </app-trend-horizontal-expander>
+
 
                 </div>
-
-                <div class="vertical" [ngStyle.lt-md]="{'width':'100%'}">
-
-                    <div class="top" [innerHTML]="translationService.data?.trend_2_verticals_3_title"></div>
-                    <div class="bottom" [ngClass.lt-md]="{'bottom-mob': true, 'bottom': false}"
-                        [innerHTML]="translationService.data?.trend_2_verticals_3_description"></div>
-
-                </div>
-
-                <div class="vertical" [ngStyle.lt-md]="{'width':'100%'}">
-
-                    <div class="top" [innerHTML]="translationService.data?.trend_2_verticals_4_title"></div>
-                    <div class="bottom" [ngClass.lt-md]="{'bottom-mob': true, 'bottom': false}"
-                        [innerHTML]="translationService.data?.trend_2_verticals_4_description"></div>
-
-                </div>
-
-                <div class="vertical" [ngStyle.lt-md]="{'width':'100%'}">
-
-                    <div class="top" [innerHTML]="translationService.data?.trend_2_verticals_5_title"></div>
-                    <div class="bottom" [ngClass.lt-md]="{'bottom-mob': true, 'bottom': false}"
-                        [innerHTML]="translationService.data?.trend_2_verticals_5_description"></div>
-
-                </div>
-
-            </div>
-
-            <div class="bars">
-
-                <app-trend-horizontal-expander [title]="translationService.data?.trend_2_horizontal_1_title"
-                    [callout]="translationService.data?.trend_2_horizontal_1_callout" color="#51B2B7">
-                </app-trend-horizontal-expander>
-
-                <app-trend-horizontal-expander [title]="translationService.data?.trend_2_horizontal_2_title"
-                    [callout]="translationService.data?.trend_2_horizontal_2_callout" color="#51B2B7">
-                </app-trend-horizontal-expander>
-
-                <app-trend-horizontal-expander [title]="translationService.data?.trend_2_horizontal_3_title"
-                    [callout]="translationService.data?.trend_2_horizontal_3_callout" color="#51B2B7">
-                </app-trend-horizontal-expander>
-
-                <app-trend-horizontal-expander [title]="translationService.data?.trend_2_horizontal_4_title"
-                    [callout]="translationService.data?.trend_2_horizontal_4_callout" color="#51B2B7">
-                </app-trend-horizontal-expander>
-
-                <app-trend-horizontal-expander [title]="translationService.data?.trend_2_horizontal_5_title"
-                    [callout]="translationService.data?.trend_2_horizontal_5_callout" color="#51B2B7">
-                </app-trend-horizontal-expander>
-
-                <app-trend-horizontal-expander [title]="translationService.data?.trend_2_horizontal_6_title"
-                    [callout]="translationService.data?.trend_2_horizontal_6_callout" color="#51B2B7">
-                </app-trend-horizontal-expander>
-
-                <app-trend-horizontal-expander [title]="translationService.data?.trend_2_horizontal_7_title"
-                    [callout]="translationService.data?.trend_2_horizontal_7_callout" color="#51B2B7">
-                </app-trend-horizontal-expander>
-
-                <app-trend-horizontal-expander [title]="translationService.data?.trend_2_horizontal_8_title"
-                    [callout]="translationService.data?.trend_2_horizontal_8_callout" color="#51B2B7">
-                </app-trend-horizontal-expander>
-
-                <app-trend-horizontal-expander [title]="translationService.data?.trend_2_horizontal_9_title"
-                    [callout]="translationService.data?.trend_2_horizontal_9_callout" color="#51B2B7">
-                </app-trend-horizontal-expander>
-
-                <app-trend-horizontal-expander [title]="translationService.data?.trend_2_horizontal_10_title"
-                    [callout]="translationService.data?.trend_2_horizontal_10_callout" color="#51B2B7">
-                </app-trend-horizontal-expander>
-
-                <app-trend-horizontal-expander [title]="translationService.data?.trend_2_horizontal_11_title"
-                    [callout]="translationService.data?.trend_2_horizontal_11_callout" color="#51B2B7">
-                </app-trend-horizontal-expander>
-
-                <app-trend-horizontal-expander [title]="translationService.data?.trend_2_horizontal_12_title"
-                    [callout]="translationService.data?.trend_2_horizontal_12_callout" color="#51B2B7">
-                </app-trend-horizontal-expander>
-
-                <app-trend-horizontal-expander [title]="translationService.data?.trend_2_horizontal_13_title"
-                    [callout]="translationService.data?.trend_2_horizontal_13_callout" color="#51B2B7">
-                </app-trend-horizontal-expander>
-
-                <app-trend-horizontal-expander [title]="translationService.data?.trend_2_horizontal_14_title"
-                    [callout]="translationService.data?.trend_2_horizontal_14_callout" color="#51B2B7">
-                </app-trend-horizontal-expander>
-
-                <app-trend-horizontal-expander [title]="translationService.data?.trend_2_horizontal_15_title"
-                    [callout]="translationService.data?.trend_2_horizontal_15_callout" color="#51B2B7">
-                </app-trend-horizontal-expander>
-
 
             </div>
 
@@ -182,68 +176,66 @@
 
     </div>
 
-</div>
+    <div class="col flex-center" style="background: #fff; padding: 100px">
 
-<div class="col flex-center" style="background: #fff; padding: 100px">
+        <div class="center">
 
-    <div class="center">
+            <h1 class="survey-title">ALTRAN – 2019 SURVEY</h1>
 
-        <h1 class="survey-title">ALTRAN – 2019 SURVEY</h1>
+            <img src="/assets/mobile/Asset 7@2x.png" width="100%" fxHide.gt-sm>
+            <img width="860" src="/assets/trend3-survey1.jpeg" fxHide.lt-md>
 
-        <img src="/assets/mobile/Asset 7@2x.png" width="100%" fxHide.gt-sm>
-        <img width="860" src="/assets/trend3-survey1.jpeg" fxHide.lt-md>
-
-    </div>
-
-</div>
-
-<div fxLayout fxLayoutAlign="center" style="padding: 50px 50px">
-
-    <div class="column">
-
-        <h1 [ngStyle.lt-md]="{'font-size':'40px', 'line-height':'55px'}"
-            [innerHTML]="translationService.data?.trend_2_block_2_title"></h1>
-
-        <p [innerHTML]="translationService.data?.trend_2_block_2_paragraph_1"></p>
+        </div>
 
     </div>
 
-</div>
+    <div fxLayout fxLayoutAlign="center" style="padding: 50px 50px">
 
-<div fxLayout fxLayoutAlign="center" style="padding: 50px 50px 150px;" [ngStyle.lt-md]="{'padding': '0px 0px 0px;'}">
+        <div class="column">
 
-    <div style="background: #01B4B9; width: 990px; padding: 50px;" [ngStyle.lt-md]="{'width': '100%'}">
-        <app-trend-card [title]="translationService.data?.trend_2_block_3_title"
-            [paragraphs]="[translationService.data?.trend_2_block_3_paragraph_1, translationService.data?.trend_2_block_3_paragraph_2]"
-            [imgsrc]="'/assets/trend2-lower-1.jpeg'">
-        </app-trend-card>
+            <h1 [ngStyle.lt-md]="{'font-size':'40px', 'line-height':'55px'}"
+                [innerHTML]="translationService.data?.trend_2_block_2_title"></h1>
 
-        <app-trend-card [title]="translationService.data?.trend_2_block_4_title"
-            [paragraphs]="[translationService.data?.trend_2_block_4_paragraph_1]"
-            [imgsrc]="'/assets/trend2-lower-2.jpeg'"></app-trend-card>
+            <p [innerHTML]="translationService.data?.trend_2_block_2_paragraph_1"></p>
 
-        <app-trend-card [title]="translationService.data?.trend_2_block_5_title"
-            [paragraphs]="[translationService.data?.trend_2_block_5_paragraph_1, translationService.data?.trend_2_block_5_paragraph_2]"
-            [imgsrc]="'/assets/trend2-lower-3.jpeg'"></app-trend-card>
+        </div>
+
     </div>
 
-</div>
+    <div fxLayout fxLayoutAlign="center" [ngStyle.lt-md]="{'padding': '0px 0px 0px;'}">
 
-<div class="col flex-center" style="padding: 50px 50px">
-    <div class="column">
-        <h1 [innerHTML]="translationService.data?.trend_2_block_6_title"></h1>
-        <p [ngStyle.lt-md]="{'font-size': '26px', 'line-height':'35px'}"
-            [innerHTML]="translationService.data?.trend_2_block_6_paragraph_1"></p>
+        <div style="background: #01B4B9; width: 1334px;" [ngStyle.lt-md]="{'width': '100%'}">
+            <app-trend-card [title]="translationService.data?.trend_2_block_3_title"
+                [paragraphs]="[translationService.data?.trend_2_block_3_paragraph_1, translationService.data?.trend_2_block_3_paragraph_2]"
+                [imgsrc]="'/assets/trend2-lower-1.jpeg'">
+            </app-trend-card>
 
-        <ol>
-            <li [innerHTML]="translationService.data?.trend_2_block_6_list_item_1"></li>
-            <li [innerHTML]="translationService.data?.trend_2_block_6_list_item_2"></li>
-            <li [innerHTML]="translationService.data?.trend_2_block_6_list_item_3"></li>
-            <li [innerHTML]="translationService.data?.trend_2_block_6_list_item_4"></li>
-        </ol>
+            <app-trend-card [title]="translationService.data?.trend_2_block_4_title"
+                [paragraphs]="[translationService.data?.trend_2_block_4_paragraph_1]"
+                [imgsrc]="'/assets/trend2-lower-2.jpeg'"></app-trend-card>
+
+            <app-trend-card [title]="translationService.data?.trend_2_block_5_title"
+                [paragraphs]="[translationService.data?.trend_2_block_5_paragraph_1, translationService.data?.trend_2_block_5_paragraph_2]"
+                [imgsrc]="'/assets/trend2-lower-3.jpeg'"></app-trend-card>
+        </div>
+
     </div>
-</div>
 
-<app-trend-download></app-trend-download>
+    <div class="col flex-center" style="padding: 50px 50px">
+        <div class="column">
+            <h1 [innerHTML]="translationService.data?.trend_2_block_6_title"></h1>
+            <p [ngStyle.lt-md]="{'font-size': '26px', 'line-height':'35px'}"
+                [innerHTML]="translationService.data?.trend_2_block_6_paragraph_1"></p>
 
-<app-trend-footer src="/assets/footer-trend3.png" link="/trends/03-BEYOND-DIGITAL-DISCONTENT"></app-trend-footer>
+            <ol>
+                <li [innerHTML]="translationService.data?.trend_2_block_6_list_item_1"></li>
+                <li [innerHTML]="translationService.data?.trend_2_block_6_list_item_2"></li>
+                <li [innerHTML]="translationService.data?.trend_2_block_6_list_item_3"></li>
+                <li [innerHTML]="translationService.data?.trend_2_block_6_list_item_4"></li>
+            </ol>
+        </div>
+    </div>
+
+    <app-trend-download></app-trend-download>
+
+    <app-trend-footer src="/assets/footer-trend3.png" link="/trends/03-BEYOND-DIGITAL-DISCONTENT"></app-trend-footer>

@@ -1,12 +1,14 @@
-<div fxLayout="column" fxHide.gt-sm style="background: #FFFFFF; margin-top: 20px; margin-bottom: 20px">
+<div fxLayout="column" 
+fxHide.gt-sm style="background: #FFFFFF; margin: 20px;">
     <div fxFlex style="padding: 20px">
         <div fxLayout="row">
             <div style="height: 150px" fxFlex="90">
-                <h1 fxFlex.lt-md="100" fxLayoutAlign="left center" [innerHTML]="title"></h1>
+                <h1 fxFlex.lt-md="100" style="font-size: 18pt" fxLayoutAlign="left center" [innerHTML]="title"></h1>
             </div>
             <div style="height: 150px" fxLayoutAlign="center center">
-                <button type="button" (click)=toggleDescription()>
-                    <mat-icon>chevron_right</mat-icon>
+                <button type="button" mat-icon-button (click)=toggleDescription()>
+                    <img src="/assets/mobile/chevron@2x.png" *ngIf="!expanded">
+                    <img src="/assets/mobile/ex@2x.png" *ngIf="expanded">
                 </button>
             </div>
         </div>
@@ -16,19 +18,22 @@
             </div>
         </div>
     </div>
-    
-        <img [src]="imgsrc" width="100%">
-    
+
+    <img [src]="imgsrc" width="100%">
+
 </div>
 
 <div class="lower" fxHide.lt-md fxLayout="column" style="background: #FFFFFF">
     <h1 fxFlex.lt-md="100" [innerHTML]="title"></h1>
+    <div fxLayout="row">
+        <div class="image" fxFlex.lt-md="50" [ngClass.lt-md]="{'image': false}">
+            <img [src]="imgsrc">
+        </div>
 
-    <div class="image" fxFlex.lt-md="50" [ngClass.lt-md]="{'image': false}">
-        <img [src]="imgsrc">
-    </div>
-
-    <div *ngFor="let p of paragraphs">
-        <p [innerHTML]="p"></p>
+        <div fxLayout="column">
+            <div *ngFor="let p of paragraphs">
+                <p [innerHTML]="p"></p>
+            </div>
+        </div>
     </div>
 </div>

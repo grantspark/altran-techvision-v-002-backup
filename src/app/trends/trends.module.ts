@@ -14,7 +14,7 @@ import {TrendShareComponent}              from './trend-share/trend-share.compon
 import {TrendsComponent}                  from './trends.component';
 import {TrendHorizontalExpanderComponent} from './trend-horizontal-expander/trend-horizontal-expander.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { MatIconModule } from '@angular/material';
+import { MatIconModule, MatButtonModule } from '@angular/material';
 import { TrendCardComponent } from './trend-card/trend-card.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -41,7 +41,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     imports: [
 
         CommonModule,
-        MatIconModule,        
+        MatIconModule,   
+        MatButtonModule,     
         FlexLayoutModule,
         BrowserAnimationsModule,
         RouterModule.forChild([

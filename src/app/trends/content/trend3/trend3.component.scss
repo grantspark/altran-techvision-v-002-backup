@@ -49,18 +49,18 @@
       }
     }
 
-    .description {      
+    .description {
       .left {
-        color: #eb5f1e;        
+        color: #eb5f1e;
       }
     }
   }
 
-.column {
-  ol > li:before {
-    background: #eb5f1e;
+  .column {
+    ol > li:before {
+      background: #eb5f1e;
+    }
   }
-}
 
   .wrapper {
     .content {
@@ -72,36 +72,7 @@
       margin-top: -200px;
 
       .title {
-        position: relative;
-
         background: #eb5f1e;
-
-        width: 980px;
-        padding: 30px;
-
-        .left {
-          display: flex;
-          align-items: center;
-
-          width: 500px;
-          height: 240px;
-
-          font-size: 50px;
-          font-weight: bold;
-          line-height: 60px;
-
-          color: #fff;
-        }
-
-        .right {
-          position: absolute;
-          right: 70px;
-          top: 0;
-
-          img {
-            height: 300px;
-          }
-        }
       }
     }
 
@@ -114,7 +85,6 @@
       padding: 30px;
 
       .left {
-
         color: #eb5f1e;
       }
 

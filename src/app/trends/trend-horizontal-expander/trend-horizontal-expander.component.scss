@@ -1,5 +1,11 @@
 $break-small: 959px;
 
+.title {
+  height: auto !important;
+  width: auto !important;
+  padding: 0px 0px 30px 0px !important;
+}
+
 :host {
   .wrapper {
     .normal {
@@ -64,7 +70,7 @@ $break-small: 959px;
 
       .right-mob {
         height: 80px;
-        
+
         width: 100%;
         .button {
           background: #fff;
@@ -111,7 +117,6 @@ $break-small: 959px;
 
     transition: all 1s;
 
-    //position: absolute;
     //right: 0;
     //z-index: 100;
     display: flex;

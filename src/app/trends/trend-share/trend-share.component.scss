@@ -1,64 +1,48 @@
 :host {
-    
-    .wrapper {        
-        display: flex;
-        justify-content: flex-end;
-        background: #f2f2f2;
-        width: 1040px;
-        margin: 0 auto;
-        
-        .flex {
-            
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            
-            margin-top: 70px;
-            padding: 10px 40px;
-            background: #fff;
-            
-            .text {
-                
-                font-size: 18px;
-                font-family: 'demi';
-                
-            }
-            
-            .social {
-                
-                margin: 10px;
-                
-                img {
-                    
-                    height: 40px;
-                    
-                }
-                
-            }
-            
+  .wrapper {
+    display: flex;
+    justify-content: flex-end;
+    background: #f2f2f2;
+    width: 1040px;
+    z-index: 20;
+    margin: 0 auto;
+
+    .flex {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      margin-top: 70px;
+      padding: 10px 40px;
+      background: #fff;
+
+      .text {
+        font-size: 18px;
+        font-family: "demi";
+      }
+
+      .social {
+        margin: 10px;
+
+        img {
+          height: 40px;
         }
-        
+      }
     }
-    
-    .basic {
-        
-        justify-content: center;
-        background: #fff;
-        width: 435px;
-        
-        .flex {
-            
-            margin: 0;
-            padding: 20px;
-            
-            .text {
-                
-                padding: 20px;
-                
-            }
-            
-        }
-        
+  }
+
+  .basic {
+    justify-content: center;
+    background: #fff;
+    width: 435px;
+
+    .flex {
+      margin: 0;
+      padding: 20px;
+
+      .text {
+        padding: 20px;
+      }
     }
-    
+  }
 }

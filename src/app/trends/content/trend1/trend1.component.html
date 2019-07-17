@@ -11,7 +11,7 @@
 
             <div class="right" fxLayoutAlign.lt-md="center">
 
-                <img src="/assets/trend1-redcircle.png">
+                <img src="/assets/icn_trend_1.png">
 
             </div>
 
@@ -63,14 +63,15 @@
 </div>
 
 
-<div fxLayoutAlign="center" style="background: #fff; padding: 100px">
-
+<div fxLayout="column" class="continuum" style="align-items: center; text-align: center; background: #fff;">
+    <div class="title">SUCCESS REQUIRES ACTION ACROSS THE CONTINUUM</div>
+    <br>
     <img width="1040" src="/assets/trend1-bar.png" fxHide.lt-md>
     <img width="100%" src="/assets/mobile/Asset 3@2x.png" fxHide.gt-sm>
 
 </div>
 
-<div class="col flex-center" style="margin: 30px;">
+<div class="col flex-center">
 
     <div class="column">
 
@@ -81,15 +82,15 @@
 
 </div>
 
-<div fxLayoutAlign="center" style="background: #fff;">
-    <div class="center">
+<div fxLayoutAlign="center" style="background: #fff; padding-bottom: 52px;">
+    <div class="column">
         <h1 class="survey-title">ALTRAN – 2019 SURVEY</h1>
         <img src="/assets/trend1-survey1.jpeg" fxHide.lt-md>
         <img width="100%" src="/assets/mobile/Asset 5@2x.png" fxHide.gt-sm>
     </div>
 </div>
 
-<div class="col flex-center" style="margin: 30px;">
+<div class="col flex-center">
 
     <div class="column">
 
@@ -125,10 +126,7 @@
 
 <app-trend-download></app-trend-download>
 
-<app-trend-footer 
-    color="#01B4B9"
-    arrowImage="/assets/Trend02-pg03@2x-cropped.png"
-    subtitle="SEE NEXT TREND"
-    title="{{translationService.data?.trend_2_title}}"
-    icon="/assets/trend2-icon.png" link="/trends/02-INNOVATE-ON-DOMINANT-ARCHITECTURES">
+<app-trend-footer color="#01B4B9" arrowImage="/assets/Trend02-pg03@2x-cropped.png" subtitle="SEE NEXT TREND"
+    title="{{translationService.data?.trend_2_title}}" icon="/assets/trend2-icon.png"
+    link="/trends/02-INNOVATE-ON-DOMINANT-ARCHITECTURES">
 </app-trend-footer>

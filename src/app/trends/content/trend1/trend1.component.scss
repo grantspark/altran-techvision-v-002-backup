@@ -1,4 +1,23 @@
 :host {
+  $break-small: 959px;
+
+  .continuum {
+    @media screen and (max-width: $break-small) {
+      padding-top: 50px;
+      margin-top: 100px;
+      padding-left: 35px;
+      padding-right: 35px;
+      padding-bottom: 50px;
+      margin-bottom: 60px;
+
+      .title {
+        text-align: center;
+        font-family: bold;
+        font-size: 35px;
+      }
+    }
+  }
+
   h1 {
     color: #e53340;
   }
@@ -13,8 +32,6 @@
     .description {
       background: #fff;
       position: relative;
-
-      padding: 30px;
 
       .left {
         color: #e53340;
@@ -51,7 +68,6 @@
       padding: 30px;
 
       .left {
-
         color: #e53340;
       }
 
@@ -59,7 +75,7 @@
         position: absolute;
         right: 75px;
         top: 0;
-    
+
         img {
           height: 180px;
         }

@@ -86,17 +86,20 @@ $break-small: 959px;
     position: relative;
     max-width: 80%;
 
+    @media screen and (max-width: $break-small) {
+      max-width: 100%;
+    }
+
     img.icon {
-      
       position: relative;
       width: 200px;
       height: 200px;
       margin-top: 25px;
-  
+
       @media screen and (max-width: $break-small) {
         position: relative;
         margin-top: 10px;
-        width: 130px;
+        // width: 130px;
         margin-left: 0px;
         margin-top: 20px;
       }
@@ -109,10 +112,8 @@ $break-small: 959px;
       bottom: -9999px;
       margin: auto;
       width: 100%;
-      
+
       padding-right: 100px;
     }
   }
-
-  
 }

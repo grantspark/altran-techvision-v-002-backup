@@ -1,72 +1,101 @@
+$break-small: 959px;
+
 :host {
-    
-    .wrapper {
-        
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-        .back {
-            
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            
-            width: 100%;
-            height: 40px;
-            
-            color: #fff;
-            background: #1F2555;
-            font-size: 13px;
-            cursor: pointer;
-            
-            &:hover {
-                
-                background: #3c48a8;
-                
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 530px;
+    .back {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 100%;
+      height: 40px;
+
+      color: #fff;
+      background: #1f2555;
+      font-size: 13px;
+      cursor: pointer;
+
+      &:hover {
+        background: #3c48a8;
+      }
+    }
+  }
+
+  .footer {
+    display: flex;
+    width: 100%;
+    height: 250px;
+
+    cursor: pointer;
+    &:hover {
+      .left {
+        background: #1f2555;
+      }
+
+      .right {
+        background: #1f2555;
+      }
+    }
+
+    .right {
+      .subtitle {
+        margin-top: 20px;
+        font-size: 18px;
+        color: #fff;
+      }
+
+      .section-title {
+        font-size: 50px;
+        line-height: 59px;
+        color: #fff;
+        font-family: "bold";
+      }
+    }
+
+    @media screen and (max-width: $break-small) {
+        height: 100%;
+
+        .right {
+            margin-bottom: 40px;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+        &:hover {
+            .left {
+                background: inherit;
+            }
+
+            .right {
+                background: inherit;
             }
         }
-        
     }
-    
-    .footer {
-        
-        background: fuchsia;
-        // display: flex;
-        // height: 450px;
-        
-        .left {
-            
-            width: 180px;
-            height: 0px;
-            margin: 30px auto;
-            background: url('/assets/trend3-bg.jpeg');
-            //clip-path: polygon(100% 50%, 87% 0, 87% 100%);
-            //clip-path: polygon(50% 0, 0 100%, 100% 100%);
-            /*Chrome,Safari*/
-            
-        }
-        
-        
-        .middle {
-            
-            //position: absolute;
-            //right: calc(50% + 90px);
-            background: green;
-            //width: 0;
-            //height: 0;
-            //border-style: solid;
-            //border-width: 225px 0 225px 90px;
-            //border-color: transparent transparent transparent transparent;
-            //
-            width: 90px;
-            
-        }
-        
-        .right {
-        
-        }
-        
+  }
+
+  .left {
+    text-align: center;
+    align-content: center;
+    height: 250px;
+  }
+
+  .icon {
+    position: absolute;
+    left: 0px;
+    margin-top: 25px;
+    margin-left: 120px;
+
+    @media screen and (max-width: $break-small) {
+      position: relative;
+      margin-top: 10px;
+      width: 130px;
+      margin-left: 0px;
+      margin-top: 20px;
     }
-    
+  }
 }

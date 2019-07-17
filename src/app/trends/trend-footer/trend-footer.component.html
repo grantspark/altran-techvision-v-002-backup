@@ -12,22 +12,22 @@
 
 
 
-    <div fxLayout [routerLink]="link">
+    <!-- <div fxLayout [routerLink]="link">
         <div [routerLink]="link">
-            <img [src]="src" width="100%">
+            <img [src]="src">
+        </div> -->
+    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign.lt-md="center" fxLayoutAlign="stretch" [style.background]="color" class="footer" [routerLink]="link">
+       
+        <div class="left" fxFlex="80" fxLayoutAlign="center right" >
+            <img fxHide.lt-md [src]="arrowImage" style="position: absolute; left: 0px; height: 250px;">
+            <img *ngIf="icon" [src]="icon" class="icon" width="200px" >
         </div>
-        <!-- <div class="left">
-      
+     
+        <div class="right" fxFlex="50">
+            <div class="subtitle"> {{ subtitle }}</div>
+            <div class="section-title" [innerHTML]="title"></div>
+        </div>
     </div>
 
-    <div class="middle"> </div>
 
-    <div class="right">
-
-
-    </div> -->
-
-
-
-    </div>
 </div>

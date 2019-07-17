@@ -8,9 +8,13 @@ import { TranslationService } from '../../shared/translation.service';
 })
 export class TrendFooterComponent {
 
-    @Input() public src: string;
+    @Input() public icon: string;
     @Input() public link: string;
-    @Input() public image: string;
+    @Input() public arrowImage: string;
+    @Input() public color: string;
+    
+    @Input() public title: string;
+    @Input() public subtitle: string;
 
     public constructor(public translationService: TranslationService) {
     }

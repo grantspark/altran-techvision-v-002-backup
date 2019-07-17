@@ -19,7 +19,11 @@ $break-small: 959px;
     }
   }
 
+  .bars {
+    margin-top: 112px;
+  }
   .column {
+    width: 1040px;
     ol > li:before {
       background: #5f4f9b;
     }

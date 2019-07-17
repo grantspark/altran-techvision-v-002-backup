@@ -24,7 +24,7 @@ export class Trend3Component implements AfterViewChecked {
         private viewScroller: ViewportScroller) {
     }
 
-    @ViewChild('bubbleDialog') bubbleDialog: ElementRef<HTMLElement>;
+    @ViewChild('bubbleDialog', {static: false}) bubbleDialog: ElementRef<HTMLElement>;
 
     public scrollTo(tag: string) {
 

@@ -53,24 +53,27 @@
             style="width: 860px; position: relative; top: 0; left: 0;">
 
         <map name="image-map">
-            <area (click)="zoneClick($event)" alt="Digital Security" title="Digital Security" coords="292,209,86"
-                shape="circle" target="trend_3_bubble_security">
-            <area (click)="zoneClick($event)" alt="Loss of Privacy" title="Loss of Privacy"
+            <area (click)="zoneClick($event, bubbleDialog)" alt="Digital Security" title="Digital Security"
+                coords="292,209,86" shape="circle" target="trend_3_bubble_security">
+            <area (click)="zoneClick($event, bubbleDialog)" alt="Loss of Privacy" title="Loss of Privacy"
                 target="trend_3_bubble_privacy" coords="194,368,63" shape="circle">
-            <area (click)="zoneClick($event)" alt="Digital Distraction" title="Digital Distraction"
+            <area (click)="zoneClick($event, bubbleDialog)" alt="Digital Distraction" title="Digital Distraction"
                 target="trend_3_bubble_distraction" coords="488,369,106" shape="circle">
-            <area (click)="zoneClick($event)" alt="Data Gluttony" title="Data Gluttony" target="trend_3_bubble_gluttony"
-                coords="574,170,85" shape="circle">
-            <area (click)="zoneClick($event)" alt="Codified Bias" title="Codified Bias" target="trend_3_bubble_bias"
-                coords="715,323,64" shape="circle">
+            <area (click)="zoneClick($event, bubbleDialog)" alt="Data Gluttony" title="Data Gluttony"
+                target="trend_3_bubble_gluttony" coords="574,170,85" shape="circle">
+            <area (click)="zoneClick($event, bubbleDialog)" alt="Codified Bias" title="Codified Bias"
+                target="trend_3_bubble_bias" coords="715,323,64" shape="circle">
         </map>
-        <div *ngIf="expanded" class="callout" [style.left]="left + 'px'" [style.top]="top + 'px'"
+        <div fxLayout="column" [hidden]="!expanded" #bubbleDialog class="callout" [style.left]="left + 'px'" [style.top]="top + 'px'"
             (click)="onCloseClick()" @fadeIn>
-            <div class="left">
-                <div class="title" [style.color]="color">{{ title }}</div>
-                <div class="cleft" [innerHTML]="callout"></div>
+            <div class="dialog-title" fxLayout="row" fxFlex="100">
+                <div class="dialog-title" fxFlex>{{ title }}</div>
+                <div class="cright dialog-title" fxFlex="10"><button mat-icon-button (click)="onCloseClick()"><img width="20px" src="/assets/mobile/ex@2x.png"></button></div>
             </div>
-            <div class="cright" (click)="onCloseClick()">x</div>
+            <div class="left">                
+                <div class="dialog-body" [innerHTML]="callout"></div>
+            </div>
+            
         </div>
     </div>
 </div>
@@ -136,10 +139,7 @@
 </div>
 
 <app-trend-download></app-trend-download>
-<app-trend-footer 
-    color="#5f4f9b"
-    arrowImage="/assets/Trend04-pg05@2x-cropped.png"
-    subtitle="SEE NEXT TREND"
-    title="{{translationService.data?.trend_4_intro_title}}"
-    icon="/assets/trend4-icon.png" link="/trends/04-FOCUS-ON-STELLAR-AI-FUNDAMENTALS">
+<app-trend-footer color="#5f4f9b" arrowImage="/assets/Trend04-pg05@2x-cropped.png" subtitle="SEE NEXT TREND"
+    title="{{translationService.data?.trend_4_intro_title}}" icon="/assets/trend4-icon.png"
+    link="/trends/04-FOCUS-ON-STELLAR-AI-FUNDAMENTALS">
 </app-trend-footer>

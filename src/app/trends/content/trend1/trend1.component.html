@@ -64,7 +64,7 @@
 
 
 <div fxLayout="column" class="continuum" style="align-items: center; text-align: center; background: #fff;">
-    <div class="title">SUCCESS REQUIRES ACTION ACROSS THE CONTINUUM</div>
+    <div class="title" [innerHTML]="translationService.data?.success_requires_action_across_the_continuum"></div>
     <br>
     <img width="1040" src="/assets/trend1-bar.png" fxHide.lt-md>
     <img width="100%" src="/assets/mobile/Asset 3@2x.png" fxHide.gt-sm>
@@ -126,7 +126,7 @@
 
 <app-trend-download></app-trend-download>
 
-<app-trend-footer color="#01B4B9" arrowImage="/assets/Trend02-pg03@2x-cropped.png" subtitle="SEE NEXT TREND"
-    title="{{translationService.data?.trend_2_title}}" icon="/assets/trend2-icon.png"
-    link="/trends/02-INNOVATE-ON-DOMINANT-ARCHITECTURES">
+<app-trend-footer color="#01B4B9" arrowImage="/assets/Trend02-pg03@2x-cropped.png"
+    subtitle="{{translationService.data?.see_next_trend}}" title="{{translationService.data?.trend_2_title}}"
+    icon="/assets/trend2-icon.png" link="/trends/02-INNOVATE-ON-DOMINANT-ARCHITECTURES">
 </app-trend-footer>

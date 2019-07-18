@@ -1,6 +1,7 @@
 import { animate, style, transition, trigger } from '@angular/animations';
 import { Component, Input }                    from '@angular/core';
 import { TrendHorizontalExpanderService }      from './trend-horizontal-expander.service';
+import { TranslationService } from 'src/app/shared/translation.service';
 
 @Component({
     selector: 'app-trend-horizontal-expander',
@@ -24,7 +25,8 @@ export class TrendHorizontalExpanderComponent {
 
     public expanded: boolean;
 
-    public constructor(public trendHorizontalExpanderService: TrendHorizontalExpanderService) {
+    public constructor(public trendHorizontalExpanderService: TrendHorizontalExpanderService,
+        public translationService: TranslationService) {
 
         trendHorizontalExpanderService.close$.subscribe(() => this.expanded = false);
 

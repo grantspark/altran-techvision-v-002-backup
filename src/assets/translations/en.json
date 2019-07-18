@@ -116,13 +116,10 @@
     "trend_3_block_1_title": "DIMENSIONS OF DIGITAL DISCONTENT",
     "trend_3_block_1_paragraph_1": "All organizations, from governments to non-profits to businesses, need to face digital discontent head on and address the concerns and fears of their audiences. Businesses have the most experience digitizing interactions and are best positioned to lead the response to reduce some forms of digital discontent while governments and non-profits are best equipped to address others.",
     "trend_3_block_1_paragraph_2": "Altran has identified eleven sources of digital discontent, five of which we consider to be the responsibility of businesses to address if they expect to enjoy the continued trust and support of their customers.",
-
     "trend_3_survey_1": "People are more comfortable sharing credit card information with an app <span>(24% cautious)</span> than accepting that an answer from an ML-based app is correct and unbiased <span>(40% cautious)</span>.",
     "trend_3_survey_2": "<span>33% of corporate managers</span> surveyed by Altran say their companies do not have an ethics officer or a corporate ethics committee to oversee the use of artificial intelligence.",
     "trend_3_block_2_title": "PLAY TO WIN   ",
     "trend_3_block_2_description": "The knock-on effects of digital discontent can be mitigated with technology if it includes an authentic business commitment and strong regulations, standards and laws. Here are five ways that companies are taking action to rebuild trust:",
-
-
     "trend_3_horizontal_1_title": "PRIVACY-FOCUSED PLATFORMS",
     "trend_3_horizontal_1_callout": "In some cases, an outright upending of an existing business model is the only way to keep up with customer expectations. For example, Facebook plans to offer encrypted messaging across its products and allow private conversations to be ephemeral. This is a major shift away from its prevailing public platform and ad-supported business.",
     "trend_3_horizontal_2_title": "HUMAN-CENTERED BY DESIGN",
@@ -143,7 +140,6 @@
     "trend_3_bubble_bias_callout": "AI algorithms reflect the data on which they have been trained, not the total population. Bias enters the decision-making process if the two are not well matched.",
     "trend_3_bubble_distraction_title": "3. DIGITAL DISTRACTION",
     "trend_3_bubble_distraction_callout": "Many digital services are designed to be addictive attention hogs that measure success based on \"user engagement\" scores.",
-
     "trend_4_intro_title": "FOCUS ON<br>STELLAR AI<br>FUNDAMENTALS",
     "trend_4_header_list_title": "Areas of Focus",
     "trend_4_header_list_item_1": "Data scientists are expensive and in short supply. There are workarounds.",
@@ -153,25 +149,20 @@
     "trend_4_block_1_title": "SCALE THE DATA SCIENCE",
     "trend_4_block_1_paragraph_1": "Artificial intelligence is evolving at high velocity and advances are occurring almost daily. However, when it comes to putting AI to work in R&D and engineering departments, the pace of adoption varies widely. Some companies are taking baby steps while others are taking giant leaps and integrating AI broadly.",
     "trend_4_block_1_paragraph_2": "Part of the issue is a growing shortage of data scientists. To fill the gap, technology solutions have emerged in the form of powerful hardware, open-source libraries and black-box solutions that automate the data-science tradecraft. To tackle the skills shortage, R&D organizations need to pursue several product roadmap trajectories:",
-
     "trend_4_block_2_title": "AI product development is a human-centric endeavor:",
     "trend_4_block_2_list_item_1": "The most effective AI implementation teams are multi-disciplinary, with representation from IT, operations and business management complemented by AI, data-analytics, subject-matter and creative-design experts.",
     "trend_4_block_2_list_item_2": "Every team requires a “playmaker” to ensure business goals are being achieved and the product meets or exceeds customer expectations.",
     "trend_4_block_2_list_item_3": "It is important to keep people in the loop as the team develops the model to be sure you’re solving the right problem that will provide value to the user.",
-
     "trend_4_survey_1": "In a recent Altran survey, <span>45% of respondents</span> said their company was using AI in the product development process, but only <span>7% said the AI algorithms undergo rigorous testing</span>.",
     "trend_4_survey_2": "<span>Only 10% of survey respondents</span> said they have a fully operational program for recruiting and developing AI capabilities, and their program is reviewed and revised to meet the company’s evolving needs.",
-
     "trend_4_block_3_title": "PUT ALL YOUR DATA TO WORK",
     "trend_4_block_3_paragraph_1": "Supervised learning is one of the most successful forms of AI. People with domain knowledge bring context to very large and diverse datasets that represent the details of the problem that is being solved. However, a complete set of training data is often fragmented and located both inside and outside the business. The ability to source and assemble rich datasets becomes a defining stage of machine-learning product development.",
     "trend_4_block_3_paragraph_2": "A case in point is an Altran AI project that developed an application that helps doctors correctly diagnose rare diseases.",
     "trend_4_block_3_citing": "Source: Altran Technology Vision 2019 – Seeking Digital Alpha: Getting Real About Digital Ambitions",
-
     "trend_4_block_4_title": "NAVIGATING DATA DIVERGENCE",
     "trend_4_block_4_paragraph_1": "A diversity of privacy standards in countries around the world have dramatically different impacts on the way data is leveraged. The divergence between the way countries approach data privacy regulations gives some nations an advantage in developing artificial intelligence applications where data capture and analysis are the basis for generating insights that lead to leaps in productivity.",
     "trend_4_block_4_paragraph_2": "The widespread use of surveillance devices gives the Chinese government access to vast amounts of personal data that can drive significant outcomes in a variety of industries, including healthcare, transportation and manufacturing. But access to data is just one factor that determines a company’s success in the application of AI.",
     "trend_4_block_4_paragraph_3": "We have four recommendations for ensuring AI solutions gain the trust of your customers and consumers.",
-
     "trend_4_horizontal_1_title": "AUGMENTING EXPERIENCES",
     "trend_4_horizontal_1_callout": "Out-of-the-box AI services such as natural language processing and computer vision can bring immediate benefits to a product. No math or statistics skills are needed to get the job done.",
     "trend_4_horizontal_2_title": "ADAPTIVE INTERACTIONS",
@@ -186,7 +177,6 @@
     "trend_4_horizontal_6_callout": "Communicating with customers about the type of personal data that is being used in AI algorithms and how AI is being integrated into products and experiences will improve their understanding and comfort level.",
     "trend_4_horizontal_7_title": "RELY ON HUMAN-CENTERED DESIGN",
     "trend_4_horizontal_7_callout": "Engage with designers who not only imagine new use cases but appreciate the technology’s impact on humans. People become more important when machines are endowed with the capability to recognize a change in emotional state by measuring the tone of voice, movement as well as physical biometrics like blood pressure, heartbeat, body temperature and skin hydration.",
-
     "trend_download_title": "DOWNLOAD THE FULL TECHVISION 2019 REPORT NOW –",
     "trend_download_placeholder_firstname": "Enter First Name",
     "trend_download_placeholder_lastname": "Enter Last Name",
@@ -197,7 +187,15 @@
     "trend_download_subscribe": "Please keep me informed about Altran Software, Services, Innovative Offerings and Upcoming Events",
     "trend_download_terms": "By Submitting This Form I Agree To <a href=\"https://google.com\" target=\"_blank\">Altran's Privacy Statement</a> And <a href=\"https://google.com\" target=\"_blank\">Terms of Use</a>.",
     "trend_download_thanks_title": "THANKS FOR DOWNLOADING!",
-    "trend_download_thanks_paragraph_1": "Please consider sharing Altran’s 2019 Technology Vision with colleagues who’d find it valuable."
-
-
+    "trend_download_thanks_paragraph_1": "Please consider sharing Altran’s 2019 Technology Vision with colleagues who’d find it valuable.",
+ 
+    "see_next_trend": "SEE NEXT TREND",
+    "read_more": "READ MORE",
+    "share": "SHARE",
+    "share_now": "SHARE NOW -",
+    "back_to_main": "BACK TO MAIN",
+    "see_introduction": "SEE INTRODUCTION",
+    "applied_ai_team_sport": "APPLIED AI IS A TEAM SPORT",
+    "success_requires_action_across_the_continuum": "SUCCESS REQUIRES ACTION ACROSS THE CONTINUUM",
+    "source_digital_ambitions": "Source: Altran Technology Vision 2019 – Seeking Digital Alpha: Getting Real About Digital Ambitions"
 }

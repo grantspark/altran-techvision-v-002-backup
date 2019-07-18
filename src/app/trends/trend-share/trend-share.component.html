@@ -1,11 +1,10 @@
 <div class="wrapper" [class.basic]="basic" [ngStyle.lt-md]="{'justify-content': 'center', 'width': '0'}">
-
     <div class="flex">
-
-        <div class="text">
-
-            {{ basic ? 'SHARE' : 'SHARE NOW -' }}
-
+        <div class="text" *ngIf="basic">
+            {{translationService.data?.share}}
+        </div>
+        <div class="text" *ngIf="!basic">
+            {{translationService.data?.share_now}}
         </div>
 
         <div class="social">

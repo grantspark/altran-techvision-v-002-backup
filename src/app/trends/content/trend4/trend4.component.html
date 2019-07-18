@@ -97,16 +97,14 @@
 
     <div class="column" style="margin-top: 50px; margin-bottom: 100px;">
 
-        <h1>APPLIED AI IS A TEAM SPORT</h1>
+        <h1 [innerHTML]="translationService.data?.applied_ai_team_sport"></h1>
 
         <p [innerHTML]="translationService.data?.trend_4_block_2_title"></p>
 
         <ul>
-
             <li [innerHTML]="translationService.data?.trend_4_block_2_list_item_1"></li>
             <li [innerHTML]="translationService.data?.trend_4_block_2_list_item_2"></li>
             <li [innerHTML]="translationService.data?.trend_4_block_2_list_item_3"></li>
-
         </ul>
 
     </div>
@@ -130,7 +128,7 @@
 
 
 
-<div class="col flex-center" style="">
+<div class="col flex-center">
     <div class="column">
 
         <h1 [innerHTML]="translationService.data?.trend_4_block_3_title"></h1>
@@ -141,9 +139,7 @@
         <img style="margin-top: 112px" fxHide.lt-md src="/assets/trend4-callout.png">
         <img width="100%" fxHide fxShow.lt-md src="/assets/mobile/Asset 4@2x.png">
 
-        <p fxHide.lt-md class="citing">Source: Altran Technology Vision 2019 – Seeking Digital Alpha: Getting Real About
-            Digital
-            Ambitions</p>
+        <p fxHide.lt-md class="citing">{{ translationService.data?.source_digital_ambitions }}</p>
 
         <h1 [innerHTML]="translationService.data?.trend_4_block_4_title"></h1>
 
@@ -178,6 +174,7 @@
 
 <app-trend-download></app-trend-download>
 
-<app-trend-footer color="#1f2555" arrowImage="/assets/Trend05-pg06@2x-cropped.png" subtitle="SEE INTRODUCTION"
-    title="{{translationService.data?.intro_title}}" link="/trends/Introduction">
+<app-trend-footer color="#1f2555" arrowImage="/assets/Trend05-pg06@2x-cropped.png"
+    subtitle="{{translationService.data?.see_introduction}}" title="{{translationService.data?.intro_title}}"
+    link="/trends/Introduction">
 </app-trend-footer>

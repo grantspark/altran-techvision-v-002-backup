@@ -4,7 +4,7 @@
 
         <div class="text">
 
-            BACK TO MAIN
+            {{translationService.data?.back_to_main }}
 
         </div>
 
@@ -16,13 +16,14 @@
         <div [routerLink]="link">
             <img [src]="src">
         </div> -->
-    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign.lt-md="center" fxLayoutAlign="stretch" [style.background]="color" class="footer" [routerLink]="link">
-       
-        <div class="left" fxFlex="80" fxLayoutAlign="center right" >
+    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign.lt-md="center" fxLayoutAlign="stretch"
+        [style.background]="color" class="footer" [routerLink]="link">
+
+        <div class="left" fxFlex="80" fxLayoutAlign="center right">
             <img fxHide.lt-md [src]="arrowImage" class="arrowImage">
-            <img *ngIf="icon" [src]="icon" class="icon" width="200px" >
+            <img *ngIf="icon" [src]="icon" class="icon" width="200px">
         </div>
-     
+
         <div class="right" fxFlex="50">
             <div class="subtitle"> {{ subtitle }}</div>
             <div class="section-title" [innerHTML]="title"></div>

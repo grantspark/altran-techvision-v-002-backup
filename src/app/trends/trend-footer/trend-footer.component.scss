@@ -55,6 +55,13 @@ $break-small: 959px;
         padding-left: 250px;
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
+        @media screen and (max-width: $break-small) {
+          position: relative;
+          padding: 0px;
+          top: auto;
+          -ms-transform: translateY(0%);
+          transform: translateY(0%);
+        }
         .subtitle {
           margin-top: 20px;
           font-size: 18px;
@@ -116,6 +123,8 @@ $break-small: 959px;
         position: relative;
         margin-top: 10px;
         // width: 130px;
+        top: auto;
+        right: auto;
         margin-left: 0px;
         margin-top: 20px;
       }

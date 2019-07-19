@@ -1,14 +1,27 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { Injectable, OnInit } from '@angular/core';
 
 @Injectable({
     providedIn: 'root'
 })
-export class TranslationService {
+export class TranslationService  implements OnInit {
 
     public data: any;
 
-    public constructor(private httpClient: HttpClient) {
+    ngOnInit(){
+        
+    }
+
+    public constructor(private httpClient: HttpClient){
+        this.httpClient.get("http://ip-api.com/json").toPromise().then((r: any) => 
+        {
+            if (r.country == "France") {
+                this.use('fr');
+            } else {
+                this.use('en');
+            }            
+        });
+
 
     }
 

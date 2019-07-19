@@ -13,9 +13,7 @@ import { TranslationService } from './shared/translation.service';
 import { TrendsModule }       from './trends/trends.module';
 
 export function setupTranslationFactory(service: TranslationService): Function {
-
-    return () => service.use('en');
-    
+    return () => service.use('en');    
 }
 
 @NgModule({

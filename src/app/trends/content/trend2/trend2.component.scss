@@ -63,12 +63,18 @@ $break-small: 959px;
     }
   }
 
+  @media screen and (max-width: $break-small) {
+    .survey {
+      padding: 35px;
+    }
+  }
   .inner {
     background: #f2f2f2;
     padding: 20px;
 
     .verticals {
       display: flex;
+      font-family: "demi";
 
       .vertical {
         background: #fff;

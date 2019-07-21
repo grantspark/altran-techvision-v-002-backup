@@ -81,7 +81,6 @@ $break-small: 959px;
       padding: 30px;
 
       .left {
-    
         color: #5f4f9b;
       }
 
@@ -112,19 +111,15 @@ $break-small: 959px;
     }
   }
 
-  ul {
-    margin: 0.75em 40px;
-    padding: 0 1em;
-    // list-style: none;
-  }
+  @media screen and (min-width: $break-small) {
+    ul {
+      margin: 0.75em 40px;
+      padding: 0 1em;
+      // list-style: none;
+    }
 
-  li {
-    margin-bottom: 15px;
-
-    @media screen and (max-width: $break-small) {
-      margin-left: 25px;
-      font-size: 18pt;
-      line-height: 32.4pt;
+    li {
+      margin-bottom: 15px;
     }
   }
 

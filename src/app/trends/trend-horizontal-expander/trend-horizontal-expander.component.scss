@@ -45,7 +45,9 @@ $break-small: 959px;
         width: 95%;
         height: 175px;
         font-weight: bold;
+        font-family: "bold";
         font-size: 24pt;
+        padding-left: 10px;
         line-height: 30pt;
       }
 
@@ -55,6 +57,10 @@ $break-small: 959px;
         padding-left: 30px;
         font-family: "demi";
         font-size: 24px;
+
+        @media screen and (max-width: $break-small){
+          font-family: "bold";
+        }
       }
 
       .middle {

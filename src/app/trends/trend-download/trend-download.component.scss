@@ -1,3 +1,5 @@
+$break-small: 959px;
+
 ::ng-deep .mat-checkbox-layout {
   white-space: normal !important;
 }
@@ -6,12 +8,12 @@
   margin-top: 3px !important;
 }
 
-h2{
-    text-align: center;
-    font-family: "bold";
-    font-size: 28px;
-    line-height: 30pt;
-    color: #1E2659;
+h2 {
+  text-align: center;
+  font-family: "bold";
+  font-size: 28px;
+  line-height: 30pt;
+  color: #1e2659;
 }
 
 :host {
@@ -21,6 +23,9 @@ h2{
 
     background: #fff;
     padding: 100px;
+    .mat-elevation-z24 {
+      padding: 30px;
+    }
 
     .center {
       width: 1040px;
@@ -32,8 +37,6 @@ h2{
         font-family: "bold";
         font-size: 26px;
       }
-
-     
     }
 
     .flex {
@@ -57,10 +60,49 @@ h2{
         }
       }
     }
+
+    @media screen and (max-width: $break-small) {
+      padding: 35px;
+      margin: 0px;
+      width: auto;
+      display: inline-block;
+
+      .center {
+        width: 100%;
+      }
+      .left {
+        width: 100%;
+        margin-right: 0px;
+      }
+
+      .flex {
+        padding: 0px;
+
+        .left {
+          width: 100%;
+          margin-right: 0px;
+        }
+      }
+
+      .mat-elevation-z24 {
+        padding: 0px;
+      }
+    }
   }
 
   a {
     font-style: italic;
+  }
+
+  .submitbutton {
+    background: #1f2556;
+    color: #fff;
+    width: 400px;
+    margin-right: 10px;
+
+    @media screen and (max-width: $break-small) {
+      width: auto;
+    }
   }
 
   .share {

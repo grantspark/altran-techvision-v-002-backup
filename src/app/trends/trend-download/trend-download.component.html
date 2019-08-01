@@ -1,7 +1,7 @@
 <div class="wrapper">
 
     <a name="download"></a>
-    
+
     <div *ngIf="!submitted" class="mat-elevation-z24" [ngClass.lt-md]="{'mat-elevation-z24': false}">
 
         <h2 [innerHTML]="translationService.data?.trend_download_title"></h2>
@@ -40,8 +40,8 @@
                         <mat-form-field>
 
                             <input matInput [placeholder]="translationService.data?.trend_download_placeholder_email"
-                                formControlName="email">
-
+                                [formControl]="email" formControlName="email">
+                            <mat-error *ngIf="formGroup.get('email').hasError('email')">Invalid Email</mat-error>
                         </mat-form-field>
 
                     </div>
@@ -70,8 +70,7 @@
 
                     <div class="flex-center">
 
-                        <button mat-raised-button [disabled]="!formGroup.valid"
-                            class="submitbutton"
+                        <button mat-raised-button [disabled]="!formGroup.valid" class="submitbutton"
                             (click)="onSubmitClick()">
 
                             {{ translationService.data?.trend_download_submit_button_text }}

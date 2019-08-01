@@ -19,7 +19,7 @@ export class TrendDownloadComponent implements OnInit {
 
         firstname: new FormControl('', Validators.required),
         lastname: new FormControl('', Validators.required),
-        email: new FormControl('', Validators.required),
+        email: new FormControl('', [Validators.required, Validators.email]),
         company: new FormControl('', Validators.required),
         phone: new FormControl('', Validators.required),
         subscribed: new FormControl(''),
@@ -88,5 +88,5 @@ export class TrendDownloadComponent implements OnInit {
         }
 
         return header;
-    }
+    }   
 }

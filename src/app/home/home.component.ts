@@ -32,7 +32,8 @@ export class HomeComponent implements OnInit {
     }
 
     public ngOnInit() {
-        console.log('adjusting height');
+        alert('adjusting height');
+        window.postMessage({"height": 900}, "*");
         window.parent.postMessage({"height": 900}, "*");
     }
 

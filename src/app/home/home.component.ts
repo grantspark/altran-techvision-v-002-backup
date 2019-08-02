@@ -32,7 +32,7 @@ export class HomeComponent implements OnInit {
     }
 
     public ngOnInit() {
-
+        window.parent.postMessage({"height": 900}, "*");
     }
 
 }

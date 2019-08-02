@@ -1,5 +1,5 @@
 import { ViewportScroller } from '@angular/common';
-import { Component, ViewChild, ElementRef, DoCheck, AfterViewChecked } from '@angular/core';
+import { Component, ViewChild, ElementRef, DoCheck, AfterViewChecked, OnInit } from '@angular/core';
 import { TranslationService } from '../../../shared/translation.service';
 import { trigger, transition, style, animate } from '@angular/animations';
 
@@ -16,7 +16,7 @@ import { trigger, transition, style, animate } from '@angular/animations';
         ])
     ]
 })
-export class Trend3Component implements AfterViewChecked {
+export class Trend3Component implements AfterViewChecked, OnInit {
 
 
 
@@ -32,6 +32,11 @@ export class Trend3Component implements AfterViewChecked {
 
     }
 
+    
+    ngOnInit() {
+        window.parent.postMessage({"height": 2000}, "*");
+    }
+    
     private topAdjusted: boolean = false;
 
     ngAfterViewChecked() {

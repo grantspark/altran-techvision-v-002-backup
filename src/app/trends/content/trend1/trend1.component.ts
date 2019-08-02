@@ -1,5 +1,5 @@
 import { ViewportScroller }   from '@angular/common';
-import { Component }          from '@angular/core';
+import { Component, OnInit }          from '@angular/core';
 import { TranslationService } from '../../../shared/translation.service';
 
 @Component({
@@ -7,7 +7,7 @@ import { TranslationService } from '../../../shared/translation.service';
     templateUrl: './trend1.component.html',
     styleUrls: [ './trend1.component.scss' ]
 })
-export class Trend1Component {
+export class Trend1Component implements OnInit {
 
     public constructor(public translationService: TranslationService,
                        private viewScroller: ViewportScroller) {
@@ -20,5 +20,10 @@ export class Trend1Component {
 
     }
 
+
+    
+    ngOnInit() {
+        window.parent.postMessage({"height": 2000}, "*");
+    }
 }
 

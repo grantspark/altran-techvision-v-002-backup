@@ -13,7 +13,9 @@ export class Trend2Component implements OnInit {
         private viewScroller: ViewportScroller) {
     }
 
-    ngOnInit() {        
+   
+    ngOnInit() {
+        window.parent.postMessage({"height": 2000}, "*");
     }
 
     public scrollTo(tag: string) {

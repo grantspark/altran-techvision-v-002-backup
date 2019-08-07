@@ -55,7 +55,7 @@ export class TrendDownloadComponent implements OnInit {
             template_id: "d-0573ae68d8d944d89112592aecd152d3"
         };
 
-        this.httpClient.post('https://api.sendgrid.com/v3/mail/send', msg, this.getHeader())
+        this.httpClient.post('https://api.sendgrid.com/v2/mail/send', msg, this.getHeader())
             .toPromise().then(r => {
                
             });
@@ -77,7 +77,7 @@ export class TrendDownloadComponent implements OnInit {
             template_id: "d-6805781f966041fe96c7df61ed112b74"
         }
 
-        this.httpClient.post('https://api.sendgrid.com/v3/mail/send', msg, this.getHeader())
+        this.httpClient.post('https://api.sendgrid.com/v2/mail/send', msg, this.getHeader())
         .toPromise().then(r =>{});
     }
 

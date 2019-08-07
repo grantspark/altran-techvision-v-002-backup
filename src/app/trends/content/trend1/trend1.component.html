@@ -66,8 +66,8 @@
 <div fxLayout="column" class="continuum" style="align-items: center; text-align: center; background: #fff;">
     <div class="title" [innerHTML]="translationService.data?.success_requires_action_across_the_continuum"></div>
     <br>
-    <img width="1040" src="/assets/trend1-bar.png" fxHide.lt-md>
-    <img width="100%" src="/assets/mobile/Asset 3@2x.png" fxHide.gt-sm>
+    <img fxShow fxHide.lt-md width="1040" src="/assets/trend1-bar.png">
+    <img fxHide fxShow.lt-md width="100%" src="/assets/mobile/Asset 3@2x.png">
 
 </div>
 

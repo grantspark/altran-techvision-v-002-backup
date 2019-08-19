@@ -26,4 +26,17 @@ export class TrendShareComponent implements OnInit {
         this.linkedInLink = "https://www.linkedin.com/shareArticle?mini=true&url=" + window.location.href + "&title=" + this.title
 
     }
+
+    shareFacebook() {
+        window.parent.postMessage({ "share": 'facebook' }, "*")
+    }
+
+    shareTwitter() {
+        window.parent.postMessage({ "share": 'twitter' }, "*")
+    }
+
+    shareLinkedIn() {
+        window.parent.postMessage({ "share": 'linkedin' }, "*")
+    }
 }
+

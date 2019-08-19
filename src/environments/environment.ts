@@ -1,6 +1,6 @@
 export const environment = {
 
     production: false,
-    API_BASE: 'http://localhost:18080'
+    API_BASE: 'https://altran-2019-api.azurewebsites.net/'
 
 };

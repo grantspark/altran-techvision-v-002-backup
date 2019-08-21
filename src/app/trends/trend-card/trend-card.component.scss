@@ -1,5 +1,11 @@
+$break-small: 959px;
+
 h1 {
   color: #01b4b9;
+
+  @media screen and (max-width: $break-small) {
+    line-height: 30pt !important;   
+  }
 }
 
 .lower {
@@ -12,11 +18,11 @@ h1 {
   margin-left: 145px;
   margin-right: 145px;
   margin-bottom: 100px;
-
+ 
   h1 {
     font-size: 18pt;
-    line-height: 30pt;
     margin: 0;
+
   }
 
   p {

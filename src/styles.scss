@@ -47,6 +47,7 @@ $break-small: 959px;
   @media screen and (max-width: $break-small) {
     font-size: 25pt;
     line-height: 40pt;
+    margin-left: 20px;
   }
 }
 
@@ -293,7 +294,7 @@ button[disabled] {
     .left {
       font-size: 18px;
       font-weight: bold;
-      line-height: 50px;
+      line-height: 22px;
       // padding: 30px;
       // color: #fff;
     }

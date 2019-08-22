@@ -16,15 +16,15 @@ import { trigger, transition, style, animate } from '@angular/animations';
         ])
     ]
 })
-export class Trend3Component implements AfterViewChecked, OnInit {
+export class Trend3Component implements AfterViewChecked {
 
-
+    private loaded: boolean = false;
 
     public constructor(public translationService: TranslationService,
         private viewScroller: ViewportScroller) {
     }
 
-    @ViewChild('bubbleDialog', {static: false}) bubbleDialog: ElementRef<HTMLElement>;
+    @ViewChild('bubbleDialog', { static: false }) bubbleDialog: ElementRef<HTMLElement>;
 
     public scrollTo(tag: string) {
 
@@ -32,16 +32,13 @@ export class Trend3Component implements AfterViewChecked, OnInit {
 
     }
 
-    
-    ngOnInit() {
-        var height=document.getElementsByTagName("html")[0].scrollHeight;
-        console.log("Height: " + height);
-        window.parent.postMessage({"height": height}, "*");
-    }
-    
+
     private topAdjusted: boolean = false;
 
     ngAfterViewChecked() {
+
+
+
         if (!this.topAdjusted) {
             setTimeout(() => {
                 this.topAdjusted = true;
@@ -51,8 +48,24 @@ export class Trend3Component implements AfterViewChecked, OnInit {
                     this.top -= this.bubbleDialog.nativeElement.clientHeight / 2;
                 }
 
+                if (!this.loaded) {
+                    window.parent.postMessage({ "height": 0 }, "*");
+        
+                    setTimeout(() => {
+                        var height = document.documentElement.scrollHeight;
+        
+                        console.log("Height: " + height);
+                        window.parent.postMessage({ "height": height }, "*");
+                        this.loaded = true;
+                    }, 100);
+                }
             });
         }
+
+        
+       
+
+        
     }
 
     public bubbles: any[] = [{

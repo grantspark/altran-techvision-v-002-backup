@@ -1,5 +1,5 @@
 import { ViewportScroller } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, AfterViewChecked } from '@angular/core';
 import { TranslationService } from '../../../shared/translation.service';
 
 @Component({
@@ -7,18 +7,12 @@ import { TranslationService } from '../../../shared/translation.service';
     templateUrl: './trend2.component.html',
     styleUrls: ['./trend2.component.scss']
 })
-export class Trend2Component implements OnInit {
-
+export class Trend2Component implements AfterViewChecked {
+    private loaded: boolean = false;
     public constructor(public translationService: TranslationService,
         private viewScroller: ViewportScroller) {
     }
 
-   
-    ngOnInit() {
-        var height=document.getElementsByTagName("html")[0].scrollHeight;
-        console.log("Height: " + height);
-        window.parent.postMessage({"height": height}, "*");
-    }
 
     public scrollTo(tag: string) {
 
@@ -26,5 +20,19 @@ export class Trend2Component implements OnInit {
 
     }
 
+    ngAfterViewChecked() {
+        if (!this.loaded) {
+            window.parent.postMessage({ "height": 0 }, "*");
 
+            setTimeout(() => {
+                var height = document.documentElement.scrollHeight;
+
+                console.log("Height: " + height);
+                window.parent.postMessage({ "height": height }, "*");
+
+                this.loaded = true;
+            }, 100);
+        }
+
+    }
 }

@@ -1,16 +1,17 @@
-import { ViewportScroller }   from '@angular/common';
-import { Component, OnInit }          from '@angular/core';
+import { ViewportScroller } from '@angular/common';
+import { Component, OnInit, AfterViewInit, ElementRef, ViewChild, AfterViewChecked } from '@angular/core';
 import { TranslationService } from '../../../shared/translation.service';
 
 @Component({
     selector: 'app-trend1',
     templateUrl: './trend1.component.html',
-    styleUrls: [ './trend1.component.scss' ]
+    styleUrls: ['./trend1.component.scss']
 })
-export class Trend1Component implements OnInit {
+export class Trend1Component implements AfterViewChecked {
+    private loaded: boolean = false;
 
     public constructor(public translationService: TranslationService,
-                       private viewScroller: ViewportScroller) {
+        private viewScroller: ViewportScroller) {
 
     }
 
@@ -20,12 +21,20 @@ export class Trend1Component implements OnInit {
 
     }
 
+    ngAfterViewChecked() {
+        if (!this.loaded) {
+            window.parent.postMessage({ "height": 0 }, "*");
 
-    
-    ngOnInit() {
-        var height=document.getElementsByTagName("html")[0].scrollHeight;
-        console.log("Height: " + height);
-        window.parent.postMessage({"height": height}, "*");
+            setTimeout(() => {
+                var height = document.documentElement.scrollHeight;
+
+                console.log("Height: " + height);
+                window.parent.postMessage({ "height": height }, "*");
+
+                this.loaded = true;
+            }, 100);
+        }
+
     }
 }
 

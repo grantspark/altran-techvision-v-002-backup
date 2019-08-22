@@ -1,4 +1,4 @@
-import { Component }             from '@angular/core';
+import { Component, AfterViewInit, ElementRef, ViewChild }             from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
@@ -7,6 +7,8 @@ import { NavigationEnd, Router } from '@angular/router';
     styleUrls: [ './app.component.scss' ]
 })
 export class AppComponent {
+    @ViewChild('content', { static: false })
+    elementView: ElementRef;
 
     public constructor(private router: Router) {
 
@@ -21,5 +23,8 @@ export class AppComponent {
         });
 
     }
+
+        
+
     
 }

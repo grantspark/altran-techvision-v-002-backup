@@ -31,8 +31,10 @@ export class HomeComponent implements OnInit {
 
     }
 
-    public ngOnInit() {
-        window.parent.postMessage({"height": 900}, "*");
+    ngOnInit() {
+        var height=document.getElementsByTagName("html")[0].scrollHeight;
+        console.log("Height: " + height);
+        window.parent.postMessage({"height": height}, "*");
     }
 
 }

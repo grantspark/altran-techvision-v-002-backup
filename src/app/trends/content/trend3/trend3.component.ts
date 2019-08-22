@@ -34,7 +34,9 @@ export class Trend3Component implements AfterViewChecked, OnInit {
 
     
     ngOnInit() {
-        window.parent.postMessage({"height": 2000}, "*");
+        var height=document.getElementsByTagName("html")[0].scrollHeight;
+        console.log("Height: " + height);
+        window.parent.postMessage({"height": height}, "*");
     }
     
     private topAdjusted: boolean = false;

@@ -47,25 +47,20 @@ export class Trend3Component implements AfterViewChecked {
                 if (this.expanded) {
                     this.top -= this.bubbleDialog.nativeElement.clientHeight / 2;
                 }
-
-                if (!this.loaded) {
-                    window.parent.postMessage({ "height": 0 }, "*");
-        
-                    setTimeout(() => {
-                        var height = document.documentElement.scrollHeight;
-        
-                        console.log("Height: " + height);
-                        window.parent.postMessage({ "height": height }, "*");
-                        this.loaded = true;
-                    }, 100);
-                }
             });
         }
 
-        
-       
+        if (!this.loaded || !this.topAdjusted) {
+            window.parent.postMessage({ "height": 0 }, "*");
 
-        
+            setTimeout(() => {
+                var height = document.documentElement.scrollHeight;
+
+                console.log("Height: " + height);
+                window.parent.postMessage({ "height": height }, "*");
+                this.loaded = true;
+            }, 100);
+        }
     }
 
     public bubbles: any[] = [{
